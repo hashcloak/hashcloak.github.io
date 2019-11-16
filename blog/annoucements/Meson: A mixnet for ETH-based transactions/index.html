@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="One of the Achille&#39;s heels of Ethereum is its lack of privacy guarantees, both on-chain and at the network layer. Although the former has been addressed by a few well-known projects, very little...">
         <meta name="keywords" content="annoucements">
-        <link rel="icon" href="https://hashcloak.com/favicon.ico">
+        <link rel="icon" href="/favicon.ico">
 
         <title>Announcing Meson: An Ethereum Mixnet To Rule Them All - HashCloak</title>
 
         <!-- Stylesheets -->
-        <link href="https://hashcloak.com/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://hashcloak.com/theme/css/fonts.css" rel="stylesheet">
-        <link href="https://hashcloak.com/theme/css/nest.css" rel="stylesheet">
-        <link href="https://hashcloak.com/theme/css/pygment.css" rel="stylesheet">
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/fonts.css" rel="stylesheet">
+        <link href="/theme/css/nest.css" rel="stylesheet">
+        <link href="/theme/css/pygment.css" rel="stylesheet">
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -39,9 +39,12 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="https://hashcloak.com/"><img class="mr20" src="https://hashcloak.com/logo.svg" alt="logo">HashCloak</a>
+                        <a class="pull-left" href="/"><img class="mr20" src="/logo.svg" alt="logo">HashCloak</a>
                     </div>
                     <div class="nav pull-right">
+                                <a href="">Home</a>
+                                <a href="blog">Blog</a>
+                                <a href="/projects">Projects</a>
                     </div>
                 </div>
             </div>
@@ -54,12 +57,12 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">Announcing Meson: An Ethereum Mixnet To Rule Them All</h1>
-                      <p class="header-date"> <a href="https://hashcloak.com/author/hashcloak.html">HashCloak</a>, Fri 15 November 2019,  <a href="https://hashcloak.com/category/annoucements.html">Annoucements</a></p>
+                      <p class="header-date"> <a href="/author/hashcloak.html">HashCloak</a>, Fri 15 November 2019,  <a href="/blog/annoucements/">Annoucements</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
                           <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
-<a href="https://hashcloak.com/tag/annoucements.html">annoucements</a>                      </p>
+<a href="/tag/annoucements.html">annoucements</a>                      </p>
                   </div>
               </div>
         </div>
@@ -87,12 +90,24 @@
 <p>Second, Tor's threat model doesn't handle global passive adversaries. For many users, this may not be of concern. But, as recent news shows, global passive adversaries have been able to figure out a bunch about Tor users activities through metadata leakage. So, this kind of threat is no longer mythical but indeed realistic. </p>
 <p>Lastly, the best way to use and access Tor is through its bundled browser. If you do everything right and given that you have a reasonable threat model, accessing Tor through the Tor browser is pretty safe. The Tor team has done a great job at making it Tor usable and accessible through its browser. However, once one leaves this nice sandbox, it's very easy to mess up and undo all this hard work. There has been efforts to make torifying applications easier such as <a href="https://github.com/dgoulet/torsocks">Torsocks</a>, it's still pretty easy to mess this up. One of the main goals of Meson is to make it easy to integrate network-level anonymity in a developer's mixer or wallet app. Having to learn the intricacies of the Tor network increases the burden on the developers. Although, it is noted that one should have a decent understanding on these networks anyway! Moreover, it has been shown that <a href="https://arxiv.org/pdf/1410.6079.pdf">using Tor for cryptocurrency transactions can be bad for the network</a>. Even though that paper specifically talks about Bitcoin, the lessons can apply to many other networks. </p>
 <h2>Roadmap</h2>
-<p>Meson is a work-in-progress. The first step towards making Meson a reality is a long-lived testnet. This will help us find what configurations we need for a production ready mixnet and help the Katzenpost team with the development of their software. Other things in our roadmap include:
-- Different language bindings: Many of the most popular wallets and mixers are written in languages aimed for web and mobile development. If we want Meson to be adopted by all wallets, wallet developers need to be able to plug it into their codebases with ease.
-- Coordination between various communities that use Ethereum's codebase so that there are multiple providers running the Meson plugin aimed at various chaind IDs. 
-- Helping the Katzenpost team with maintenance of the Katzenpost software. 
-- Continuous funding through a payment network (or other decentralized mechanisms)
-- Contribute to mixnet R&amp;D!</p>
+<p>Meson is a work-in-progress. The first step towards making Meson a reality is a long-lived testnet. This will help us find what configurations we need for a production ready mixnet and help the Katzenpost team with the development of their software. Other things in our roadmap include:</p>
+<ul>
+<li>
+<p>Different language bindings: Many of the most popular wallets and mixers are written in languages aimed for web and mobile development. If we want Meson to be adopted by all wallets, wallet developers need to be able to plug it into their codebases with ease.</p>
+</li>
+<li>
+<p>Coordination between various communities that use Ethereum's codebase so that there are multiple providers running the Meson plugin aimed at various chaind IDs. </p>
+</li>
+<li>
+<p>Helping the Katzenpost team with maintenance of the Katzenpost software. </p>
+</li>
+<li>
+<p>Continuous funding through a payment network (or other decentralized mechanisms)</p>
+</li>
+<li>
+<p>Contribute to mixnet R&amp;D!</p>
+</li>
+</ul>
 <p>Special thanks to David Staiton for taking the time to help us through Katzenpost and Goncalo Pestana for the helpful discussions and PR reviews!</p>
 
 
