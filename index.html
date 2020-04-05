@@ -1,101 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="HashCloak is a blockchain research lab focused privacy, scalability and distributed systems. Our focus on working on misunderstood and underappreciated areas of blockchain systems.">
-        <meta name="keywords" content="">
-        <link rel="icon" href="/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      HashCloak - Blockchain Research Lab - Privacy, Scalability, Distributed
+      Systems
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="progbar"></div>
 
-        <title>HashCloak - HashCloak</title>
-
-        <!-- Stylesheets -->
-        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/theme/css/fonts.css" rel="stylesheet">
-        <link href="/theme/css/nest.css" rel="stylesheet">
-        <link href="/theme/css/pygment.css" rel="stylesheet">
-        <!-- /Stylesheets -->
-
-        <!-- RSS Feeds -->
-        <!-- /RSS Feeds -->
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-
-
-    </head>
-
-    <body>
-
-        <!-- Header -->
-    <div class="header-container gradient">
-
-            <!-- Static navbar -->
-            <div class="container">
-                <div class="header-nav">
-                    <div class="header-logo">
-                        <a class="pull-left" href="/"><img class="mr20" src="/logo.svg" alt="logo">HashCloak</a>
-                    </div>
-                    <div class="nav pull-right">
-                                <a href="">Home</a>
-                                <a href="blog">Blog</a>
-                                <a href="/projects">Projects</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /Static navbar -->
-
-            <!-- Header -->
-    <div class="container header-wrapper">
-        <div class="row">
-              <div class="col-lg-12">
-                  <div class="header-content">
-                      <h1 class="header-title text-uppercase">HashCloak</h1>
-                      <div class="header-underline"></div>
-                  </div>
-              </div>
-        </div>
+    <div class="icon">
+      <a href="#" class="menuIcon"></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
     </div>
-            <!-- /Header -->
 
+    <section class="landing">
+      <div class="container">
+        <h1 class="header landing__header">Privacy.</h1>
+        <h1 class="header landing__header">Scalability.</h1>
+        <h1 class="header landing__header">Distributed Systems.</h1>
+        <h1 class="landing__brand">HASHCLOAK.</h1>
+      </div>
+      <div class="scroll-indicator" data-dot-id="1"></div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <h1 class="header about__header">WHAT IS HASHCLOAK?<br /></h1>
+        <p class="text">
+          HashCloak is an independent blockchain research lab.
+        </p>
+        <br />
+        <p class="text">
+          Our expertise in cryptography and distributed systems allows us to
+          innovate evolving and custom solutions for technology-enabled
+          businesses.
+        </p>
+      </div>
+      <div class="scroll-indicator" data-dot-id="2"></div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="header--container"></div>
+        <h1 class="header projects__header">CURRENT RESEARCH</h1>
+      </div>
+      <div class="container">
+        <div class="project__item">
+          <img class="project__item--img" src="./assets/2x.png" alt="" />
+          <a class="project__item--header">
+            Meson: Redefining the potential of network security through privacy
+            tools.
+          </a>
         </div>
-        <!-- /Header -->
 
-
-        <!-- Content -->
-    <div class="container content">
-        <p>HashCloak is a blockchain research lab focused privacy, scalability and distributed systems. Our focus on working on misunderstood and underappreciated areas of blockchain systems.</p>
-    </div>
-        <!-- /Content --> 
-
-        <!-- Footer -->
-        <div class="footer gradient-2">
-            <div class="container footer-container ">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                        <div class="footer-title"></div>
-                        <ul class="list-unstyled">
-                        </ul>
-                    </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                    </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                    </div> 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <p class="pull-right text-right">
-                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
-                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
-                            <small></small>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="project__item">
+          <img
+            class="project__item--img placeholder2"
+            src="./assets/placeholder3.jpg"
+            alt=""
+          />
+          <a class="project__item--header">
+            Validator Privacy in Proof of Stake Networks
+          </a>
+          <p class="project__item--text">
+            Looking into how to provide privacy for validators/stakers in proof
+            of stakenetworks at both the networking and on-chain layers. Much of
+            the work has focused on being applied to ETH2.0, although much of
+            the work is applicable to other proof of stake networks
+          </p>
         </div>
-        <!-- /Footer -->
-    </body>
+      </div>
+      <div class="scroll-indicator" data-dot-id="3"></div>
+    </section>
+
+    <script src="scrolldots.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
