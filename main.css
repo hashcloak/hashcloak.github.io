@@ -303,7 +303,11 @@ button:focus {
   outline: none;
   background-color: #101523;
 }
-
+@media (min-width: 778px) and (max-width: 1159px) {
+  .contact {
+    margin-top: 50vh;
+  }
+}
 @media only screen and (min-width: 1160px) {
   .navbar .brand {
     height: 1.5rem;
@@ -400,6 +404,9 @@ button:focus {
   }
   textarea {
     width: 60vw;
+  }
+  .contact {
+    margin-top: 20vh;
   }
   button {
     margin-bottom: 10rem;
