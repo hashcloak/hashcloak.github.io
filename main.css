@@ -234,6 +234,80 @@ ul li a:hover {
   z-index: 100;
 }
 
+/* contact form */
+.contact {
+  margin-top: 20rem;
+}
+
+.contact .container {
+  margin-bottom: 10rem;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 0.5rem;
+}
+
+input,
+textarea {
+  max-width: 80vw;
+  border-radius: 2px;
+  background-color: #23262e;
+  border: none;
+}
+
+input {
+  height: 26px;
+  color: lightgray;
+  font-size: 16px;
+  letter-spacing: 1.33px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  margin: 1.5rem 0 0 0;
+}
+
+textarea {
+  height: 150px;
+  margin: 1rem 0 0 0;
+  color: #fefefe;
+  width: 90vw;
+  font-size: 16px;
+  letter-spacing: 1.33px;
+}
+
+button {
+  border-radius: 3px;
+  margin-top: 2rem;
+  background: #23262e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  width: 80vw;
+  border: none;
+  letter-spacing: 1.33px;
+  color: #fefefe;
+  margin-bottom: 3rem;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+  background-color: #101523;
+}
+@media (min-width: 778px) and (max-width: 1159px) {
+  .contact {
+    margin-top: 50vh;
+  }
+}
 @media only screen and (min-width: 1160px) {
   .navbar .brand {
     height: 1.5rem;
@@ -262,7 +336,8 @@ ul li a:hover {
   }
   .landing .container,
   .about .container,
-  .projects .container {
+  .projects .container,
+  .contact .container {
     margin: 0 0 0 5rem;
   }
   .landing__header {
@@ -326,5 +401,15 @@ ul li a:hover {
     line-height: 1.66rem;
     letter-spacing: 1.4px;
     max-width: 400px;
+  }
+  textarea {
+    width: 60vw;
+  }
+  .contact {
+    margin-top: 20vh;
+  }
+  button {
+    margin-bottom: 10rem;
+    width: 20vw;
   }
 }
