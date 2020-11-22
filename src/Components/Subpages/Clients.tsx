@@ -63,10 +63,10 @@ const Clients: React.FC = () => {
         </Grid>
         <Grid container direction="row" alignItems="center" justify="center" className={classes.iconContainer}>
           <Grid item xs={6} md={6} >
-            <img className={classes.img} src="/hashcloak-react/logos/fuel.png" alt="Fuel Labs" />
+            <img className={classes.img} src="/logos/fuel.png" alt="Fuel Labs" />
           </Grid>
           <Grid item xs={6} md={6} >
-            <img className={classes.img} src="/hashcloak-react/logos/celo.png" alt="Celo" />
+            <img className={classes.img} src="/logos/celo.png" alt="Celo" />
           </Grid>
         </Grid>
         <Grid container alignItems="center" justify="center" className={classes.container}>
@@ -76,10 +76,10 @@ const Clients: React.FC = () => {
         </Grid>
         <Grid container direction="row" alignItems="center" justify="center" className={classes.iconContainer}>
           <Grid item xs={6} md={6} >
-            <img className={classes.img} src="/hashcloak-react/logos/binance.png" alt="Fuel Labs" />
+            <img className={classes.img} src="/logos/binance.png" alt="Fuel Labs" />
           </Grid>
           <Grid item xs={6} md={6} >
-            <img className={classes.img} src="/hashcloak-react/logos/esp.png" alt="Celo" />
+            <img className={classes.img} src="/logos/esp.png" alt="Celo" />
           </Grid>
         </Grid>
       </LayoutContainer>

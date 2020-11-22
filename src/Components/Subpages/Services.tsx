@@ -56,7 +56,7 @@ const Services: React.FC = () => {
             <p className={classes.text}>Cryptographic design</p>
           </Grid>
           <Grid item xs={12} md={7}>
-            <img className={classes.img} src="/hashcloak-react/graphics/hc-contract.png" alt="3d rendering of smart contract with a lock" />
+            <img className={classes.img} src="/graphics/hc-contract.png" alt="3d rendering of smart contract with a lock" />
           </Grid>
         </Grid>
       </LayoutContainer>

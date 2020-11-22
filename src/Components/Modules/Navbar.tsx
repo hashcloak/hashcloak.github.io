@@ -64,7 +64,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     position: "absolute",
     left: 0,
     width: "100%",
-    height: "100vh",
+    height: "105vh",
     zIndex: 400000,
   },
   mobileLinkContainer: {
