@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/rewrite/static/js/main.0c87a48d.chunk.js",
-    "main.js.map": "/rewrite/static/js/main.0c87a48d.chunk.js.map",
-    "runtime-main.js": "/rewrite/static/js/runtime-main.2d72677a.js",
-    "runtime-main.js.map": "/rewrite/static/js/runtime-main.2d72677a.js.map",
-    "static/js/2.d09226ee.chunk.js": "/rewrite/static/js/2.d09226ee.chunk.js",
-    "static/js/2.d09226ee.chunk.js.map": "/rewrite/static/js/2.d09226ee.chunk.js.map",
-    "static/js/3.1247990d.chunk.js": "/rewrite/static/js/3.1247990d.chunk.js",
-    "static/js/3.1247990d.chunk.js.map": "/rewrite/static/js/3.1247990d.chunk.js.map",
-    "index.html": "/rewrite/index.html",
-    "static/js/2.d09226ee.chunk.js.LICENSE.txt": "/rewrite/static/js/2.d09226ee.chunk.js.LICENSE.txt",
-    "static/media/nav.b7e7a6b6.svg": "/rewrite/static/media/nav.b7e7a6b6.svg"
+    "main.js": "/hashcloak.github.io/static/js/main.0c87a48d.chunk.js",
+    "main.js.map": "/hashcloak.github.io/static/js/main.0c87a48d.chunk.js.map",
+    "runtime-main.js": "/hashcloak.github.io/static/js/runtime-main.2e39257f.js",
+    "runtime-main.js.map": "/hashcloak.github.io/static/js/runtime-main.2e39257f.js.map",
+    "static/js/2.d09226ee.chunk.js": "/hashcloak.github.io/static/js/2.d09226ee.chunk.js",
+    "static/js/2.d09226ee.chunk.js.map": "/hashcloak.github.io/static/js/2.d09226ee.chunk.js.map",
+    "static/js/3.1247990d.chunk.js": "/hashcloak.github.io/static/js/3.1247990d.chunk.js",
+    "static/js/3.1247990d.chunk.js.map": "/hashcloak.github.io/static/js/3.1247990d.chunk.js.map",
+    "index.html": "/hashcloak.github.io/index.html",
+    "static/js/2.d09226ee.chunk.js.LICENSE.txt": "/hashcloak.github.io/static/js/2.d09226ee.chunk.js.LICENSE.txt",
+    "static/media/nav.b7e7a6b6.svg": "/hashcloak.github.io/static/media/nav.b7e7a6b6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d72677a.js",
+    "static/js/runtime-main.2e39257f.js",
     "static/js/2.d09226ee.chunk.js",
     "static/js/main.0c87a48d.chunk.js"
   ]
