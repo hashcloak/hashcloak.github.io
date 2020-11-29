@@ -31,7 +31,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   navLink: {
     color: palette.primary.light,
     textDecoration: "none",
-    fontSize: "1.4rem",
+    fontSize: "1.1rem",
     '&:hover': {
       borderBottom: `5px solid ${palette.primary.main}`
     },

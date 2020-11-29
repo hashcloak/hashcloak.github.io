@@ -7,13 +7,12 @@ import { makeStyles } from "@material-ui/core/styles"
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
   container: {
     marginBottom: "2rem",
-    borderBottom: `1px solid #1F2223`,
-    marginTop: "5rem",
+    marginTop: "2rem",
     maxWidth: "2650px",
     display: "flex",
     alignItems: "flex-end",
     [breakpoints.up('xl')]: {
-      marginTop: "10rem",
+      marginTop: "5rem",
     }
   },
   textContainer: {
@@ -31,9 +30,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
       fontSize: "2.8rem"
     }
   },
-  subhead: { color: palette.primary.light, fontSize: "1.5rem", },
+  subhead: { color: palette.primary.light, fontSize: "1.25rem", },
   text: {
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     color: palette.primary.dark,
     maxWidth: "600px",
     [breakpoints.down('sm')]: {

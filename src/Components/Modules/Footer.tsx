@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
     display: "flex",
     width: "100%",
@@ -20,7 +20,11 @@ const useStyles = makeStyles(() => ({
   },
   small: {
     fontSize: "14px",
-    color: "#e8e8e8",
+    color: "#868686",
+    [breakpoints.down('sm')]: {
+      fontSize: "12px",
+    },
+
   }
 }))
 

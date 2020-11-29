@@ -7,7 +7,7 @@ import * as typeformEmbed from "@typeform/embed";
 
 const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
-    margin: "10rem auto"
+    marginTop: "5rem",
   },
   contactForm: {
     width: "100%", height: "70vh",

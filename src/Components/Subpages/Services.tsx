@@ -6,13 +6,11 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
   container: {
-    borderTop: `1px solid #1F2223`,
-    marginTop: "7rem",
     [breakpoints.up('lg')]: {
-      marginTop: "10rem",
+      marginTop: "3rem",
     },
     [breakpoints.up('xl')]: {
-      marginTop: "15rem",
+      marginTop: "5rem",
     }
   },
   textContainer: {
@@ -24,9 +22,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
       fontSize: "2.8rem"
     }
   },
-  subhead: { color: palette.primary.light, fontSize: "1.5rem", },
+  subhead: { color: palette.primary.light, fontSize: "1.1rem", },
   text: {
-    fontSize: "1.5rem",
+    fontSize: "1.1rem",
     color: palette.primary.light,
   },
   img: {

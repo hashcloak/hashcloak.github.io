@@ -30,16 +30,13 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     color: palette.primary.main,
   },
   aboutText: {
-    fontSize: "2.5rem",
-    color: palette.primary.light,
+    fontSize: "2rem",
+    color: "#868686",
     width: "80%",
-    margin: "0 2rem",
+    padding: "2rem",
     '&:hover': { color: palette.primary.main, transition: "ease-in-out 0.2s", },
-    [breakpoints.up('lg')]: {
-      margin: "0 auto",
-    },
     [breakpoints.down('md')]: {
-      fontSize: "1.8rem",
+      fontSize: "1.5rem",
       margin: 0,
     },
   },
@@ -69,9 +66,7 @@ const Landing: React.FC = () => {
             <h1 className={classes.brandText}>Hashcloak.</h1>
           </Grid>
         </Grid>
-        <Grid container className={classes.container}>
-          <p className={classes.aboutText}>Hashcloak is an independent research lab that targets problems surrounding privacy-preserving technologies and blockchain infrastructure design.</p>
-        </Grid>
+        <p className={classes.aboutText}>Hashcloak is an independent research lab that targets problems surrounding privacy-preserving technologies and blockchain infrastructure design.</p>
       </LayoutContainer>
     </>
   )
