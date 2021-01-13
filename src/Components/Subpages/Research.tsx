@@ -33,7 +33,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   subhead: { color: palette.primary.light, fontSize: "1.25rem", },
   text: {
     fontSize: "1.1rem",
-    color: palette.primary.dark,
+    color: palette.primary.light,
     maxWidth: "600px",
     [breakpoints.down('sm')]: {
       width: "100%",
@@ -61,8 +61,11 @@ const Research: React.FC = () => {
     <div id="research">
       <LayoutContainer>
         <Grid container alignItems="center" className={classes.container}>
-          <Grid item justify="center" xs={12} md={6} className={classes.textContainer}>
+          <Grid item xs={12} className={classes.textContainer}>
             <h1 className={classes.title}>Research</h1>
+            <p className={classes.text}>Here is a taste of the research we conduct and open problems we are currently tackling.</p>
+          </Grid>
+          <Grid item justify="center" xs={12} md={6} className={classes.textContainer}>
             <h1 className={classes.subhead}>{currentYear}</h1>
             <p >
               <a className={classes.text} href="https://hashcloak.com">

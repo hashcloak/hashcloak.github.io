@@ -20,7 +20,8 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     }
   },
   title: {
-    color: palette.primary.light, fontSize: "2rem",
+    color: palette.primary.main, fontSize: "2rem",
+    textAlign: "center",
     [breakpoints.down('sm')]: {
       fontSize: "1.4rem",
     },
@@ -29,9 +30,12 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     marginLeft: "10%",
   },
   img: {
-    width: "30%",
+    //width: "30%",
     margin: "2rem 0",
     paddingRight: "3rem",
+    position: "relative",
+    left: "30%",
+    "transform": "translate(-50%)",
     [breakpoints.down('lg')]: {
       width: "40%",
     },
@@ -54,7 +58,7 @@ const Clients: React.FC = () => {
       <LayoutContainer>
         <Grid container alignItems="center" justify="center" className={classes.container}>
           <Grid item xs={12} className={classes.textContainer}>
-            <h1 className={classes.title}>Clients we've collaborated with:</h1>
+            <h1 className={classes.title}>Clients We've Collaborated With:</h1>
           </Grid>
         </Grid>
         <Grid container direction="row" alignItems="center" justify="center" className={classes.logoContainer}>
@@ -67,7 +71,7 @@ const Clients: React.FC = () => {
         </Grid>
         <Grid container alignItems="center" justify="center" className={classes.container}>
           <Grid item xs={12} className={classes.textContainer}>
-            <h1 className={classes.title}>Research at Hashcloak is supported by:</h1>
+            <h1 className={classes.title}>Research At HashCloak Is Supported By:</h1>
           </Grid>
         </Grid>
         <Grid container direction="row" alignItems="center" justify="center" className={classes.logoContainer}>

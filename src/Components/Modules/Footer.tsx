@@ -34,7 +34,7 @@ const Footer: React.FunctionComponent = () => {
   return (
     <footer className={classes.container}>
       <small className={classes.small}>
-        {currentYear} Hashcloak.
+        {currentYear} HashCloak Inc.
       </small>
       <small className={classes.small}>
         Designed and developed by @sweetpea22 (twitter).

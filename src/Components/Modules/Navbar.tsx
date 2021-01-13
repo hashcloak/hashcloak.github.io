@@ -115,7 +115,7 @@ const Navbar: React.FunctionComponent = () => {
     <nav className={classes.container}>
       <Grid container justify="flex-start">
         <Grid item >
-          <h1 className={classes.brandName}>Hashcloak</h1>
+          <h1 className={classes.brandName}>HashCloak</h1>
         </Grid>
         <div className={classes.menuToggle} onClick={toggleNav}>
           <img src={nav} alt="menuIcon" />
@@ -129,7 +129,10 @@ const Navbar: React.FunctionComponent = () => {
             <a className={classes.navLink} href="#research">Research</a>
           </Grid>
           <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="/">Blog</a>
+            <a className={classes.navLink} href="#blogs">Blogs</a>
+          </Grid>
+          <Grid item className={classes.navLinkContainer}>
+            <a className={classes.navLink} href="#newsletters">Newsletters</a>
           </Grid>
           <Grid item className={classes.navLinkContainer}>
             <a className={classes.navLink} href="#contact">Contact</a>
