@@ -97,6 +97,25 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
       transition: "0.33s ease-in-out",
     },
   },
+  img: {
+    //width: "30%",
+    margin: "2rem 0",
+    paddingRight: "3rem",
+    position: "relative",
+    left: "30%",
+    "transform": "translate(-50%)",
+    [breakpoints.down('lg')]: {
+      width: "40%",
+    },
+    [breakpoints.down('xs')]: {
+      width: "100%",
+      margin: 0,
+    },
+    [breakpoints.up('xl')]: {
+      margin: 0,
+      width: "40%",
+    }
+  },
 }))
 
 const Navbar: React.FunctionComponent = () => {
