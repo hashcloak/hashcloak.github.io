@@ -20,24 +20,24 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     }
   },
   title: {
-    color: palette.primary.light, fontSize: "3rem",
-    [breakpoints.down('md')]: {
-      fontSize: "2.5rem",
-    },
+    color: palette.primary.main, fontSize: "2rem",
+    textAlign: "center",
     [breakpoints.down('sm')]: {
-      fontSize: "2rem",
+      fontSize: "1.4rem",
     },
   },
-  subhead: { color: palette.primary.light, fontSize: "1.5rem", },
-  iconContainer: {
+  logoContainer: {
     marginLeft: "10%",
   },
   img: {
-    width: "30%",
+    //width: "30%",
     margin: "2rem 0",
     paddingRight: "3rem",
+    position: "relative",
+    left: "30%",
+    "transform": "translate(-50%)",
     [breakpoints.down('lg')]: {
-      width: "70%",
+      width: "40%",
     },
     [breakpoints.down('xs')]: {
       width: "100%",
@@ -45,7 +45,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     },
     [breakpoints.up('xl')]: {
       margin: 0,
-      width: "45%",
+      width: "40%",
     }
   },
 }));
@@ -58,27 +58,27 @@ const Clients: React.FC = () => {
       <LayoutContainer>
         <Grid container alignItems="center" justify="center" className={classes.container}>
           <Grid item xs={12} className={classes.textContainer}>
-            <h1 className={classes.title}>Clients we've collaborated with:</h1>
+            <h1 className={classes.title}>Clients We've Collaborated With:</h1>
           </Grid>
         </Grid>
-        <Grid container direction="row" alignItems="center" justify="center" className={classes.iconContainer}>
-          <Grid item xs={6} md={6} >
+        <Grid container direction="row" alignItems="center" justify="center" className={classes.logoContainer}>
+          <Grid item xs={6} >
             <img className={classes.img} src="/logos/fuel.png" alt="Fuel Labs" />
           </Grid>
-          <Grid item xs={6} md={6} >
+          <Grid item xs={6} >
             <img className={classes.img} src="/logos/celo.png" alt="Celo" />
           </Grid>
         </Grid>
         <Grid container alignItems="center" justify="center" className={classes.container}>
           <Grid item xs={12} className={classes.textContainer}>
-            <h1 className={classes.title}>Research at Hashcloak is supported by:</h1>
+            <h1 className={classes.title}>Research At HashCloak Is Supported By:</h1>
           </Grid>
         </Grid>
-        <Grid container direction="row" alignItems="center" justify="center" className={classes.iconContainer}>
-          <Grid item xs={6} md={6} >
+        <Grid container direction="row" alignItems="center" justify="center" className={classes.logoContainer}>
+          <Grid item xs={6} >
             <img className={classes.img} src="/logos/binance.png" alt="Fuel Labs" />
           </Grid>
-          <Grid item xs={6} md={6} >
+          <Grid item xs={6} >
             <img className={classes.img} src="/logos/esp.png" alt="Celo" />
           </Grid>
         </Grid>

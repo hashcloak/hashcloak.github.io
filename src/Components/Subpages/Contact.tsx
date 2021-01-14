@@ -1,43 +1,49 @@
 import React from "react";
 import LayoutContainer from "../Modules/LayoutContainer";
 import { makeStyles } from "@material-ui/core/styles"
-import { useRef, useEffect } from 'react';
-import * as typeformEmbed from "@typeform/embed";
+import {InlineWidget} from 'react-calendly';
 
-
-const useStyles = makeStyles(({ breakpoints }) => ({
+const useStyles = makeStyles(({ breakpoints, palette }) => ({
   container: {
-    margin: "10rem auto"
+    marginTop: "5rem",
   },
-  contactForm: {
-    width: "100%", height: "70vh",
-    [breakpoints.up(3800)]: {
-      height: "50vh",
-    }
+  title: {
+    color: palette.primary.main, fontSize: "2rem",
+    textAlign: "center",
+    [breakpoints.down('sm')]: {
+      fontSize: "1.4rem",
+    },
+  },
+  text: {
+    fontSize: "1.5rem",
+    color: palette.primary.light,
+    maxWidth: "600px",
+    textAlign: "center",
+    position: "relative",
+    left: "50%",
+    "transform": "translate(-50%)",
+    [breakpoints.down('sm')]: {
+      width: "100%",
+    },
+    '&:hover': { color: palette.primary.main, transition: "ease-in-out 0.2s", }
   },
 }));
 
 
-
-
-
 const Contact: React.FC = () => {
   const classes = useStyles();
-  const typeformRef = useRef(null);
-
-  useEffect(() => typeformEmbed.makeWidget(typeformRef.current, 'https://form.typeform.com/to/sDcIwgCP', {
-    hideFooter: true,
-    hideHeaders: false,
-  }), [typeformRef]);
 
   return (
     <div id="contact">
       <LayoutContainer>
         <div className={classes.container}>
-          <div ref={typeformRef} className={classes.contactForm}></div>
+          <h1 className={classes.title}>Contact</h1>
+          <p className={classes.text}> Schedule a free 30 minute consultation session</p>
+        <InlineWidget url="https://calendly.com/hashcloak/30min"/>
         </div>
       </LayoutContainer>
     </div>
   )
-}
+};
+
 export default Contact;

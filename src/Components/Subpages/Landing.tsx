@@ -15,31 +15,32 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     }
   },
   text: {
-    fontSize: "3.5rem",
-    fontFamily: "Inter",
+    fontSize: "3.0rem",
+    fontFamily: "Liberation Sans",
     color: palette.primary.light,
     [breakpoints.down('md')]: {
-      fontSize: "3.5rem",
+      fontSize: "3.0rem",
     },
     [breakpoints.down('sm')]: {
       fontSize: "2.5rem",
     }
   },
   brandText: {
-    fontSize: "3.5rem",
+    fontSize: "3.0rem",
     color: palette.primary.main,
   },
   aboutText: {
-    fontSize: "2.5rem",
-    color: palette.primary.light,
+    fontSize: "2rem",
+    color: "#868686",
     width: "80%",
-    margin: "0 2rem",
+    padding: "2rem",
+    textAlign: "center",
+    position: "relative",
+    left: "50%",
+    "transform": "translate(-50%)",
     '&:hover': { color: palette.primary.main, transition: "ease-in-out 0.2s", },
-    [breakpoints.up('lg')]: {
-      margin: "0 auto",
-    },
     [breakpoints.down('md')]: {
-      fontSize: "1.8rem",
+      fontSize: "1.5rem",
       margin: 0,
     },
   },
@@ -66,12 +67,10 @@ const Landing: React.FC = () => {
             <h1 className={classes.text}>Privacy.</h1>
             <h1 className={classes.text}>Scalability.</h1>
             <h1 className={classes.text}>Distributed Systems.</h1>
-            <h1 className={classes.brandText}>Hashcloak.</h1>
+            <h1 className={classes.brandText}>HashCloak.</h1>
           </Grid>
         </Grid>
-        <Grid container className={classes.container}>
-          <p className={classes.aboutText}>Hashcloak is an independent research lab that targets problems surrounding privacy-preserving technologies and blockchain infrastructure design.</p>
-        </Grid>
+        <p className={classes.aboutText}>Hashcloak is an independent research lab that targets problems surrounding privacy-preserving technologies and blockchain infrastructure design.</p>
       </LayoutContainer>
     </>
   )
