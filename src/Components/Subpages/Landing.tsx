@@ -61,7 +61,7 @@ const Landing: React.FC = () => {
         <div style={{ height: "4rem" }}></div>
         <Grid container alignItems="center" className={classes.container}>
           <Grid item md={7}>
-            <img className={classes.img} src="/graphics/hashcloak-ice.png" alt="" />
+            <img className={classes.img} src="/graphics/ice.png" alt="" />
           </Grid>
           <Grid item xs={12} md={5}>
             <h1 className={classes.text}>Privacy.</h1>
