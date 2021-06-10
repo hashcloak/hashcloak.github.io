@@ -148,7 +148,7 @@ const Navbar: React.FunctionComponent = () => {
             <a className={classes.navLink} href="#research">Research</a>
           </Grid>
           <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="#blogs">Blogs</a>
+            <a className={classes.navLink} href="https://write.as/hashcloaks-blog/">Blogs</a>
           </Grid>
           <Grid item className={classes.navLinkContainer}>
             <a className={classes.navLink} href="#newsletters">Newsletters</a>
@@ -164,7 +164,7 @@ const Navbar: React.FunctionComponent = () => {
             </div>
             <ul className={classes.mobileLinkContainer}>
               <div className={classes.mobileLinkWrapper} >
-                <a className={classes.mobileLink} target="_blank" rel="noopener noreferrer" href="https://write.as/hashcloak/">Blog</a>
+                <a className={classes.mobileLink} target="_blank" rel="noopener noreferrer" href="https://write.as/hashcloaks-blog/">Blog</a>
               </div>
             </ul>
           </div>
