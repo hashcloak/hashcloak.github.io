@@ -1,19 +1,19 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import HomePage from "./Pages/HomePage";
+import { VFC } from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import Home from './pages/Home';
 
 export const ROUTE_LINKS = {
-  Home: "/",
-}
+  Home: '/',
+  NotFound: '*',
+};
 
-const Routes = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path={ROUTE_LINKS.Home} component={HomePage} />
-      </Switch>
-    </BrowserRouter>
-  )
-}
+const Routes: VFC = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path={ROUTE_LINKS.Home} component={Home} />
+      <Redirect from={ROUTE_LINKS.NotFound} to={ROUTE_LINKS.Home} />
+    </Switch>
+  </BrowserRouter>
+);
 
-export default Routes
+export default Routes;
