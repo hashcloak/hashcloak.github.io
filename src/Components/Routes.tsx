@@ -8,9 +8,9 @@ export const ROUTE_LINKS = {
 };
 
 const Routes: VFC = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={ROUTE_LINKS.Home}>
     <Switch>
-      <Route path={ROUTE_LINKS.Home} component={Home} />
+      <Route path={ROUTE_LINKS.Home} exact component={Home} />
       <Redirect from={ROUTE_LINKS.NotFound} to={ROUTE_LINKS.Home} />
     </Switch>
   </BrowserRouter>
