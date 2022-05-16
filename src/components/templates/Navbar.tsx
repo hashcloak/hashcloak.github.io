@@ -58,30 +58,32 @@ const Navbar: React.FunctionComponent = () => {
   const classes = useStyles();
 
   return (
-    <header className={classes.container}>
-      <HashLink to="#main" smooth className={classes.link}>
+    <header className="bg-gradient-to-r from from-tertiary-main to-black flex items-center justify-between z-50 px-32 py-3 w-full top-0	custom-box-box-shadow">
+      {/* color: 'white',
+    margin: '0 4px', */}
+      <HashLink to="#main" smooth className="text-white my-0 mx-1">
         <img src={logo} alt="logo" className={classes.logo} />
       </HashLink>
       <div className={classes.content}>
-        <HashLink to="#mission" smooth className={classes.link}>
+        <HashLink to="#mission" smooth className="text-white my-0 mx-1">
           Mission
         </HashLink>
-        <HashLink to="#products" smooth className={classes.link}>
+        <HashLink to="#products" smooth className="text-white my-0 mx-1">
           Products
         </HashLink>
-        <HashLink to="#services" smooth className={classes.link}>
+        <HashLink to="#services" smooth className="text-white my-0 mx-1">
           Services
         </HashLink>
-        <HashLink to="#research" smooth className={classes.link}>
+        <HashLink to="#research" smooth className="text-white my-0 mx-1">
           Research
         </HashLink>
-        <HashLink to="#supporters" smooth className={classes.link}>
+        <HashLink to="#supporters" smooth className="text-white my-0 mx-1">
           Supporters
         </HashLink>
-        <HashLink to="#announcements" smooth className={classes.link}>
+        <HashLink to="#announcements" smooth className="text-white my-0 mx-1">
           Announcements
         </HashLink>
-        <HashLink to="#contact" smooth className={classes.link}>
+        <HashLink to="#contact" smooth className="text-white my-0 mx-1">
           Contact
         </HashLink>
       </div>

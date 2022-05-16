@@ -1,6 +1,82 @@
-html {
-  display: none;
-  width: 100% !important;
-  overflow-x: hidden !important;
-  background-color: black !important;
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+
+@layer base {
+  html {
+    font-family: 'Amiko', sans-serif;
+  }
+
+  h1 {
+    @apply text-8xl font-montsarrat;
+  }
+
+  h2 {
+    @apply text-6xl font-montsarrat;
+  }
+
+  h3 {
+    @apply text-5xl font-montsarrat;
+  }
+
+  h4 {
+    @apply text-4xl font-montsarrat;
+  }
+
+  h5 {
+    @apply text-2xl font-montsarrat;
+  }
+
+  h6 {
+    @apply text-xl font-montsarrat;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  a {
+    @apply text-base text-primary-main no-underline font-bold	hover:text-primary-light;
+  }
+
+  .custom-body {
+    @apply overflow-x-hidden bg-gradient-to-tr from-secondary-light to-primary-main;
+  }
+
+  .custom-container {
+    @apply h-screen flex items-center flex-col md:flex-row justify-center w-full;
+  }
+
+  .custom-text-shadow {
+    text-shadow: 0 0 3px #e6e6e6;
+  }
+
+  .custom-img {
+    object-fit: contain;
+    width: 30px;
+    margin: 0 10px 4px 10px;
+  }
+
+  .custom-img:hover {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  .custom-anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+  }
+
+  .custom-anchor:hover {
+    transform: translateY(-0.1875em);
+  }
+
+  .custom-box-shadow {
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+  }
 }
+
+@tailwind components;
+@tailwind utilities;
