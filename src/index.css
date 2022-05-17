@@ -43,7 +43,7 @@
   }
 
   .custom-container {
-    @apply h-screen flex items-center flex-col md:flex-row justify-center w-full;
+    @apply px-10 md:px-24 lg:px-32;
   }
 
   .custom-text-shadow {

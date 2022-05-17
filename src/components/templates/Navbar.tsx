@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { HashLink } from 'react-router-hash-link';
 import BurgerMenu from 'components/organisms/BurgerMenu';
-import logo from '../../assets/company-logo.png';
 
 const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
@@ -58,11 +57,13 @@ const Navbar: React.FunctionComponent = () => {
   const classes = useStyles();
 
   return (
-    <header className="bg-gradient-to-r from from-tertiary-main to-black flex items-center justify-between z-50 px-32 py-3 w-full top-0	custom-box-box-shadow">
-      {/* color: 'white',
-    margin: '0 4px', */}
+    <header className="bg-gradient-to-r from from-tertiary-main to-black flex items-center justify-between z-50 w-full top-0	custom-box-box-shadow custom-container xl:px-72 py-3 ">
       <HashLink to="#main" smooth className="text-white my-0 mx-1">
-        <img src={logo} alt="logo" className={classes.logo} />
+        <img
+          src="./assets/company-logo.png"
+          alt="logo"
+          className="object-contain w-24 sm:w-full"
+        />
       </HashLink>
       <div className={classes.content}>
         <HashLink to="#mission" smooth className="text-white my-0 mx-1">
