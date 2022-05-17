@@ -4,7 +4,7 @@ import React from 'react';
 const Products: React.FC = () => (
   <div className="custom-container-contents bg-tertiary-light" id="products">
     <div className="custom-header">
-      <h2 className="custom-header-title">Products</h2>
+      <h2 className="custom-header-title m-4">Products</h2>
       <h5 className="font-bold">
         We build vertically-intergrated privacy products for the cryptocurrency
         space.

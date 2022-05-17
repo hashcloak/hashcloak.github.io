@@ -59,7 +59,7 @@
   }
 
   .custom-header-title {
-    @apply custom-title mt-0 mb-4;
+    @apply text-primary-dark font-bold mt-0 mb-4;
   }
 
   .custom-contents {

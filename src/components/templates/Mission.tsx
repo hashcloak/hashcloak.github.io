@@ -2,7 +2,9 @@ import React from 'react';
 
 const Mission: React.FC = () => (
   <div className="custom-container-contents" id="mission">
-    <h2 className="custom-title">Our Mission</h2>
+    <div className="custom-header">
+      <h2 className="custom-header-title">Our Mission</h2>
+    </div>
     <div className="flex justify-between items-center">
       <img
         src="./assets/mission-image.png"
