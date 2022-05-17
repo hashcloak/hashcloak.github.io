@@ -26,22 +26,22 @@ const theme = createTheme({
             fontSize: '.8rem',
           },
         },
-        h2: {
-          fontSize: '60px',
-          fontFamily: 'Montserrat,sans-serif',
-          margin: '0 !important',
-          lineHeight: '90%',
-          [breakpoints.up('sm')]: {
-            fontSize: '48px',
-            whiteSpace: 'nowrap',
-            margin: '5px 0 !important',
-          },
-          [breakpoints.down('xs')]: {
-            fontSize: '1.3rem',
-            margin: '2px 0 !important',
-            whiteSpace: 'nowrap',
-          },
-        },
+        // h2: {
+        //   fontSize: '60px',
+        //   fontFamily: 'Montserrat,sans-serif',
+        //   margin: '0 !important',
+        //   lineHeight: '90%',
+        //   [breakpoints.up('sm')]: {
+        //     fontSize: '48px',
+        //     whiteSpace: 'nowrap',
+        //     margin: '5px 0 !important',
+        //   },
+        //   [breakpoints.down('xs')]: {
+        //     fontSize: '1.3rem',
+        //     margin: '2px 0 !important',
+        //     whiteSpace: 'nowrap',
+        //   },
+        // },
         h3: {
           fontSize: '48px',
           fontFamily: 'Montserrat,sans-serif',
@@ -61,30 +61,30 @@ const theme = createTheme({
           },
           [breakpoints.down('xs')]: {},
         },
-        h5: {
-          fontSize: '24px',
-          fontFamily: 'Montserrat,sans-serif',
-          margin: '0',
-          lineHeight: '90%',
-          [breakpoints.down('sm')]: {
-            fontSize: '20px',
-          },
-          [breakpoints.down('xs')]: {
-            fontSize: '.9rem',
-          },
-        },
-        h6: {
-          fontSize: '18px',
-          fontFamily: 'Montserrat,sans-serif',
-          margin: '0',
-          lineHeight: '90%',
-          [breakpoints.down('sm')]: {
-            fontSize: '16px',
-          },
-          [breakpoints.down('xs')]: {
-            fontSize: '.8rem',
-          },
-        },
+        // h5: {
+        //   fontSize: '24px',
+        //   fontFamily: 'Montserrat,sans-serif',
+        //   margin: '0',
+        //   lineHeight: '90%',
+        //   [breakpoints.down('sm')]: {
+        //     fontSize: '20px',
+        //   },
+        //   [breakpoints.down('xs')]: {
+        //     fontSize: '.9rem',
+        //   },
+        // },
+        // h6: {
+        //   fontSize: '18px',
+        //   fontFamily: 'Montserrat,sans-serif',
+        //   margin: '0',
+        //   lineHeight: '90%',
+        //   [breakpoints.down('sm')]: {
+        //     fontSize: '16px',
+        //   },
+        //   [breakpoints.down('xs')]: {
+        //     fontSize: '.8rem',
+        //   },
+        // },
         p: {
           fontSize: '16px',
           fontFamily: 'Amiko ,sans-serif',
