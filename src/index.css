@@ -46,6 +46,14 @@
     @apply px-10 md:px-24 lg:px-32 xl:px-72;
   }
 
+  .custom-container-contents {
+    @apply custom-container flex flex-col items-center pb-40;
+  }
+
+  .custom-title {
+    @apply text-primary-dark font-bold mt-40 mb-28;
+  }
+
   .custom-text-shadow {
     text-shadow: 0 0 3px #e6e6e6;
   }

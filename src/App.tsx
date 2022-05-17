@@ -85,18 +85,18 @@ const theme = createTheme({
         //     fontSize: '.8rem',
         //   },
         // },
-        p: {
-          fontSize: '16px',
-          fontFamily: 'Amiko ,sans-serif',
-          letterSpacing: '-0.05em',
-          [breakpoints.down('sm')]: {
-            fontSize: '14px',
-          },
-          [breakpoints.down('xs')]: {
-            marginTop: '4px',
-            color: '#868686',
-          },
-        },
+        // p: {
+        //   fontSize: '16px',
+        //   fontFamily: 'Amiko ,sans-serif',
+        //   letterSpacing: '-0.05em',
+        //   [breakpoints.down('sm')]: {
+        //     fontSize: '14px',
+        //   },
+        //   [breakpoints.down('xs')]: {
+        //     marginTop: '4px',
+        //     color: '#868686',
+        //   },
+        // },
         li: {
           fontSize: '16px',
           fontFamily: 'Amiko ,sans-serif',
