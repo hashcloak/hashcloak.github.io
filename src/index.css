@@ -47,11 +47,23 @@
   }
 
   .custom-container-contents {
-    @apply custom-container flex flex-col items-center pb-40;
+    @apply custom-container flex flex-col items-center sm:pb-40 pb-20;
   }
 
   .custom-title {
     @apply text-primary-dark font-bold mt-40 mb-28;
+  }
+
+  .custom-header {
+    @apply text-center mt-20 mb-10 sm:mt-40 sm:mb-20 w-full md:w-8/12;
+  }
+
+  .custom-header-title {
+    @apply custom-title mt-0 mb-4;
+  }
+
+  .custom-contents {
+    @apply flex flex-col lg:flex-row justify-center items-center;
   }
 
   .custom-text-shadow {
