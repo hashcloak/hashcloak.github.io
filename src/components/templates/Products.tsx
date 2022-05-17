@@ -5,13 +5,13 @@ const Products: React.FC = () => (
   <div className="custom-container-contents bg-tertiary-light" id="products">
     <div className="custom-header">
       <h2 className="custom-header-title m-4">Products</h2>
-      <h5 className="font-bold">
+      <h5>
         We build vertically-intergrated privacy products for the cryptocurrency
         space.
       </h5>
     </div>
-    <div className="custom-contents">
-      <div className="flex py-2.5 flex-col max-w-xs justify-center">
+    <div className="custom-contents justify-center w-full">
+      <div className="flex flex-1 flex-col py-2.5">
         <a
           href="https://mesonmix.net/"
           target="_blank"
@@ -21,11 +21,11 @@ const Products: React.FC = () => (
           <img
             src="./assets/products-meson-logo.png"
             alt="meson"
-            className="w-52 lg:w-64 object-contain"
+            className="w-52 object-contain xl:w-64"
             style={{ marginBottom: '-20px' }}
           />
           <h4>Meson</h4>
-          <p className="text-secondary-dark mt-0 mb-1.5">
+          <p className="mb-1.5 mt-0 text-secondary-dark">
             A mix network for cryptocurrency transactions
           </p>
         </a>
@@ -38,7 +38,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/twitter-logo.png"
               alt="twitter"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
           <a
@@ -49,7 +49,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/github-logo-black.png"
               alt="github"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
           <a
@@ -60,12 +60,12 @@ const Products: React.FC = () => (
             <img
               src="./assets/element-logo.svg"
               alt="element"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
         </div>
       </div>
-      <div className="flex py-2.5 flex-col max-w-xs justify-center">
+      <div className="flex flex-1 flex-col py-2.5">
         <a
           href="https://mesonmix.net/wallet"
           target="_blank"
@@ -75,10 +75,10 @@ const Products: React.FC = () => (
           <img
             src="./assets/products-mesonSafe-logo.png"
             alt="meson-safe"
-            className="object-contain w-36 lg:w-44 m-2.5"
+            className="m-2.5 w-36 object-contain lg:w-44"
           />
           <h4>MesonSafe</h4>
-          <p className="text-secondary-dark mt-0 mb-1.5">
+          <p className="mb-1.5 mt-0 text-secondary-dark">
             A privacy-focused wallet for managing your crypto assets
           </p>
         </a>
@@ -91,7 +91,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/twitter-logo.png"
               alt="twitter"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
           <a
@@ -102,12 +102,12 @@ const Products: React.FC = () => (
             <img
               src="./assets/github-logo-black.png"
               alt="github"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
         </div>
       </div>
-      <div className="flex py-2.5 flex-col max-w-xs">
+      <div className="flex flex-1 flex-col py-2.5">
         <a
           href="https://stoffelmpc.com/"
           target="_blank"
@@ -117,10 +117,10 @@ const Products: React.FC = () => (
           <img
             src="./assets/products-stoffelMPC-logo.png"
             alt="stoffelMPC"
-            className="object-contain w-36 lg:w-44 m-2.5"
+            className="m-2.5 w-36 object-contain lg:w-44"
           />
           <h4>StoffelMPC</h4>
-          <p className="text-secondary-dark mt-0 mb-1.5">
+          <p className="mb-1.5 mt-0 text-secondary-dark">
             A framework for building expressive confidential blockchain
             applications using multiparty computation (MPC)
           </p>
@@ -134,7 +134,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/twitter-logo.png"
               alt="twitter"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
           <a
@@ -145,7 +145,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/github-logo-black.png"
               alt="github"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
           <a
@@ -156,7 +156,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/products-developer-survey.svg"
               alt="developer-survey"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
               style={{ width: '25px' }}
             />
           </a>
@@ -168,7 +168,7 @@ const Products: React.FC = () => (
             <img
               src="./assets/products-mkbook.png"
               alt="documentation"
-              className="object-contain w-7 mx-2.5"
+              className="mx-2.5 w-7 object-contain"
             />
           </a>
         </div>

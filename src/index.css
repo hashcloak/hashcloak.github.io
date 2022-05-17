@@ -23,7 +23,7 @@
   }
 
   h5 {
-    @apply text-lg sm:text-xl md:text-2xl font-montsarrat m-0;
+    @apply text-lg sm:text-xl md:text-2xl font-montsarrat m-0 font-bold;
   }
 
   h6 {
@@ -55,7 +55,7 @@
   }
 
   .custom-header {
-    @apply text-center mt-20 mb-10 sm:mt-40 sm:mb-20 w-full md:w-8/12;
+    @apply text-center mt-20 mb-10 sm:mt-40 sm:mb-20 w-full lg:w-8/12;
   }
 
   .custom-header-title {
@@ -64,6 +64,22 @@
 
   .custom-contents {
     @apply flex flex-col lg:flex-row justify-center items-center;
+  }
+
+  .custom-card {
+    @apply w-72 mb-1 bg-white shadow-md rounded-md;
+  }
+
+  .custom-card-content {
+    @apply flex flex-col justify-between p-4 h-full text-left;
+  }
+
+  .custom-card-text {
+    @apply flex flex-col justify-start text-left text-black;
+  }
+
+  .custom-card-btn {
+    @apply bg-primary-dark text-white rounded-lg py-1.5 hover:opacity-80 hover:text-white hover:bg-primary-light mt-1.5;
   }
 
   .custom-text-shadow {

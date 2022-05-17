@@ -3,38 +3,38 @@ import { HashLink } from 'react-router-hash-link';
 import BurgerMenu from 'components/organisms/BurgerMenu';
 
 const Navbar: React.FunctionComponent = () => (
-  <header className="bg-gradient-to-r from from-tertiary-main to-black flex items-center justify-between z-50 w-full top-0	custom-box-box-shadow custom-container py-3 fixed">
-    <HashLink to="#main" smooth className="text-white my-0 mx-1">
+  <header className="from top-0	custom-box-box-shadow custom-container fixed z-50 flex items-center justify-between py-3 w-full bg-gradient-to-r from-tertiary-main to-black">
+    <HashLink to="#main" smooth className="mx-1 my-0 text-white">
       <img
         src="./assets/company-logo.png"
         alt="logo"
-        className="object-contain w-24 sm:w-full"
+        className="w-24 object-contain sm:w-full"
       />
     </HashLink>
-    <div className="lg:flex hidden lg:justify-between">
-      <HashLink to="#mission" smooth className="text-white my-0 mx-1">
+    <div className="hidden lg:flex lg:justify-between">
+      <HashLink to="#mission" smooth className="mx-1 my-0 text-white">
         Mission
       </HashLink>
-      <HashLink to="#products" smooth className="text-white my-0 mx-1">
+      <HashLink to="#products" smooth className="mx-1 my-0 text-white">
         Products
       </HashLink>
-      <HashLink to="#services" smooth className="text-white my-0 mx-1">
+      <HashLink to="#services" smooth className="mx-1 my-0 text-white">
         Services
       </HashLink>
-      <HashLink to="#research" smooth className="text-white my-0 mx-1">
+      <HashLink to="#research" smooth className="mx-1 my-0 text-white">
         Research
       </HashLink>
-      <HashLink to="#supporters" smooth className="text-white my-0 mx-1">
+      <HashLink to="#supporters" smooth className="mx-1 my-0 text-white">
         Supporters
       </HashLink>
-      <HashLink to="#announcements" smooth className="text-white my-0 mx-1">
+      <HashLink to="#announcements" smooth className="mx-1 my-0 text-white">
         Announcements
       </HashLink>
-      <HashLink to="#contact" smooth className="text-white my-0 mx-1">
+      <HashLink to="#contact" smooth className="mx-1 my-0 text-white">
         Contact
       </HashLink>
     </div>
-    <div className="lg:hidden block">
+    <div className="block lg:hidden">
       <BurgerMenu />
     </div>
   </header>

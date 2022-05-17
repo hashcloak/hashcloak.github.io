@@ -5,11 +5,11 @@ const Mission: React.FC = () => (
     <div className="custom-header">
       <h2 className="custom-header-title">Our Mission</h2>
     </div>
-    <div className="flex justify-between items-center">
+    <div className="flex items-center justify-between">
       <img
         src="./assets/mission-image.png"
         alt="mission"
-        className="object-contain w-1/3 sm:w-72 md:w-96"
+        className="w-1/3 object-contain sm:w-72 md:w-96"
       />
       <div className="max-w-lg text-left">
         <p>
