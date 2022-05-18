@@ -10,21 +10,20 @@ const Products: React.FC = () => (
         space.
       </h5>
     </div>
-    <div className="custom-contents justify-center w-full">
-      <div className="flex flex-1 flex-col py-2.5">
+    <div className="custom-contents w-full">
+      <div className="custom-contents-item">
         <a
           href="https://mesonmix.net/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center"
+          className="w-full"
         >
           <img
             src="./assets/products-meson-logo.png"
             alt="meson"
-            className="w-52 object-contain xl:w-64"
-            style={{ marginBottom: '-20px' }}
+            className="inline w-36 object-contain lg:w-48"
           />
-          <h4>Meson</h4>
+          <h5>Meson</h5>
           <p className="mb-1.5 mt-0 text-secondary-dark">
             A mix network for cryptocurrency transactions
           </p>
@@ -65,19 +64,19 @@ const Products: React.FC = () => (
           </a>
         </div>
       </div>
-      <div className="flex flex-1 flex-col py-2.5">
+      <div className="custom-contents-item">
         <a
           href="https://mesonmix.net/wallet"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center"
+          className="w-full"
         >
           <img
             src="./assets/products-mesonSafe-logo.png"
             alt="meson-safe"
-            className="m-2.5 w-36 object-contain lg:w-44"
+            className="inline p-4 w-36 object-contain lg:w-48"
           />
-          <h4>MesonSafe</h4>
+          <h5>MesonSafe</h5>
           <p className="mb-1.5 mt-0 text-secondary-dark">
             A privacy-focused wallet for managing your crypto assets
           </p>
@@ -107,19 +106,19 @@ const Products: React.FC = () => (
           </a>
         </div>
       </div>
-      <div className="flex flex-1 flex-col py-2.5">
+      <div className="custom-contents-item">
         <a
           href="https://stoffelmpc.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center"
+          className="w-full"
         >
           <img
             src="./assets/products-stoffelMPC-logo.png"
             alt="stoffelMPC"
-            className="m-2.5 w-36 object-contain lg:w-44"
+            className="inline pt-8 w-36 object-contain lg:w-48"
           />
-          <h4>StoffelMPC</h4>
+          <h5>StoffelMPC</h5>
           <p className="mb-1.5 mt-0 text-secondary-dark">
             A framework for building expressive confidential blockchain
             applications using multiparty computation (MPC)

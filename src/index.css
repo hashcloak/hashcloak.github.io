@@ -63,7 +63,11 @@
   }
 
   .custom-contents {
-    @apply flex flex-col lg:flex-row justify-center items-center;
+    @apply flex flex-col flex-1  w-full lg:grid lg:grid-flow-col lg:grid-cols-3 justify-center items-center place-items-center lg:col-auto lg:gap-2;
+  }
+
+  .custom-contents-item {
+    @apply flex flex-1 flex-col items-center w-72 lg:w-full lg:pb-0 pb-5;
   }
 
   .custom-card {

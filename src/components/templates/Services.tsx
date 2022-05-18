@@ -5,8 +5,8 @@ const Services: React.FC = () => (
     <div className="custom-header">
       <h2 className="custom-header-title">Services</h2>
     </div>
-    <div className="custom-contents items-start">
-      <div className="flex flex-1 flex-col items-center p-2.5 w-72">
+    <div className="custom-contents lg:items-start">
+      <div className="custom-contents-item">
         <img src="./assets/services-bespoke.png" alt="Bespoke" />
         <h5 className="py-1 font-bold lg:py-2">Bespoke R&amp;D</h5>
         <p className="text-secondary-dark">
@@ -16,7 +16,7 @@ const Services: React.FC = () => (
           these tools into your product.
         </p>
       </div>
-      <div className="flex flex-1 flex-col items-center p-2.5 w-72">
+      <div className="custom-contents-item">
         <img src="./assets/services-audits.png" alt="security-audits" />
         <h5 className="py-1 font-bold lg:py-2">Security Audits</h5>
         <p className="text-secondary-dark">
@@ -24,7 +24,7 @@ const Services: React.FC = () => (
           into their product and conduct security reviews towards that end.
         </p>
       </div>
-      <div className="flex flex-1 flex-col items-center p-2.5 w-72">
+      <div className="custom-contents-item">
         <img src="./assets/services-advisory.png" alt="advisory" />
         <h5 className="py-1 font-bold lg:py-2">Advisory</h5>
         <p className="text-secondary-dark">
