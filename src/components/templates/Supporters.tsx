@@ -20,8 +20,18 @@ const Supporters: React.FC = () => (
         className="row-span-1 w-48 object-contain"
       />
       <img
+        src="./assets/supporters-flashbots.png"
+        alt="flashbots"
+        className="row-span-1 w-28 object-contain"
+      />
+      <img
         src="./assets/supporters-hakka-finance.svg"
         alt="hakka-finance"
+        className="row-span-1 w-48 object-contain"
+      />
+      <img
+        src="./assets/supporters-ethereum-foundation.png"
+        alt="ethereum-foundation"
         className="row-span-1 w-48 object-contain"
       />
       <img
@@ -30,23 +40,13 @@ const Supporters: React.FC = () => (
         className="row-span-1 w-48 object-contain"
       />
       <img
-        src="./assets/supporters-sacred-finance.svg"
-        alt="sacred-finance"
-        className="row-span-1 w-48 object-contain"
-      />
-      <img
-        src="./assets/supporters-flashbots.png"
-        alt="flashbots"
-        className="row-span-1 w-28 object-contain"
-      />
-      <img
-        src="./assets/supporters-ethereum-foundation.png"
-        alt="ethereum-foundation"
-        className="row-span-1 w-48 object-contain"
-      />
-      <img
         src="./assets/supporters-light-protocol.svg"
         alt="light-protocol"
+        className="row-span-1 w-48 object-contain"
+      />
+      <img
+        src="./assets/supporters-sacred-finance.svg"
+        alt="sacred-finance"
         className="row-span-1 w-48 object-contain"
       />
       <img
