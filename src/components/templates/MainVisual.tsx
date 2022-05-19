@@ -1,8 +1,9 @@
+import BaseContainer from 'components/organisms/BaseContainer';
 import React from 'react';
 
 const MainVisual: React.FC = () => (
-  <div
-    className="custom-container from custom-h-screen-v80 flex flex-col items-center justify-center text-white bg-gradient-to-br from-tertiary-main to-white sm:flex-row sm:items-center sm:justify-between sm:h-screen"
+  <BaseContainer
+    bg="custom-h-screen-v80 items-normal pt-40 justify-center text-white bg-gradient-to-br from-tertiary-main to-white sm:flex-row sm:items-center sm:justify-between sm:h-screen"
     id="main"
   >
     <div className="z-10 flex flex-col justify-start w-full sm:w-2/4 md:w-full">
@@ -22,7 +23,7 @@ const MainVisual: React.FC = () => (
       alt="main-visual-bg"
       className="w-full object-contain"
     />
-  </div>
+  </BaseContainer>
 );
 
 export default MainVisual;

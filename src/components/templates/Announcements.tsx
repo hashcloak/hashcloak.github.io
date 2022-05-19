@@ -1,10 +1,12 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const title = 'Keeping up HashCloak';
+
 const Announcements: React.FC = () => (
-  <div className="custom-container-contents" id="announcements">
-    <div className="custom-header">
-      <h2 className="custom-header-title">Keeping up HashCloak</h2>
-    </div>
+  <BaseContainer id="announcements">
+    <TitleHeader title={title} />
     <div className="custom-contents lg:grid-cols-2 lg:items-start">
       <a
         href="https://write.as/hashcloaks-blog/"
@@ -28,7 +30,7 @@ const Announcements: React.FC = () => (
         </p>
       </a>
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Announcements;

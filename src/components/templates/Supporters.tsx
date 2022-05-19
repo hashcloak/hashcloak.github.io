@@ -1,18 +1,19 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const titleForClients = 'Clients';
+const titleForGrants = 'Our work has been supported by';
+const description =
+  'We build vertically-intergrated privacy products for the cryptocurrency space.';
+
 const Supporters: React.FC = () => (
-  <div
-    className="custom-container-contents"
+  <BaseContainer
     id="supporters"
-    style={{ backgroundImage: 'linear-gradient(to left, #c0e3e5, #fff)' }}
+    bg="bg-gradient-to-tl from-secondary-light to-secondary-main"
   >
-    <div className="custom-header">
-      <h2 className="custom-header-title m-4">Clients</h2>
-      <h5>
-        We build vertically-intergrated privacy products for the cryptocurrency
-        space.
-      </h5>
-    </div>
+    <TitleHeader title={titleForClients} description={description} />
+
     <div className="grid gap-4 grid-cols-1 items-center justify-center place-items-center text-center lg:grid-flow-col lg:grid-rows-2">
       <img
         src="./assets/supporters-perpetual-protocol.png"
@@ -56,15 +57,8 @@ const Supporters: React.FC = () => (
       />
     </div>
 
-    <div className="custom-header">
-      <h2 className="custom-header-title m-4 whitespace-normal">
-        Our work has been supported by
-      </h2>
-      <h5>
-        We build vertically-intergrated privacy products for the cryptocurrency
-        space.
-      </h5>
-    </div>
+    <TitleHeader title={titleForGrants} />
+
     <div className="grid gap-4 grid-cols-1 items-center justify-center place-items-center text-center lg:grid-flow-col lg:grid-rows-1">
       <img
         src="./assets/supporters-esp.png"
@@ -84,7 +78,7 @@ const Supporters: React.FC = () => (
         className='className="row-span-1 object-contain" w-48'
       />
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Supporters;

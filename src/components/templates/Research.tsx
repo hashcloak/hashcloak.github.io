@@ -1,14 +1,15 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const title = 'Research';
+const description =
+  'Here is a taste of the research we conduct and open problems we are currently tackling.';
+
 const Research: React.FC = () => (
-  <div className="custom-container-contents bg-tertiary-light" id="research">
-    <div className="custom-header">
-      <h2 className="custom-header-title m-4">Research</h2>
-      <h5>
-        Here is a taste of the research we conduct and open problems we are
-        currently tackling.
-      </h5>
-    </div>
+  <BaseContainer bg="bg-tertiary-light" id="research">
+    <TitleHeader title={title} description={description} />
+
     <div className="flex flex-col flex-wrap items-center justify-center w-full lg:flex-row lg:justify-around">
       <div className="custom-card">
         <div className="custom-card-content">
@@ -93,7 +94,7 @@ const Research: React.FC = () => (
         </div>
       </div>
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Research;

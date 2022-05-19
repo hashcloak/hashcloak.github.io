@@ -1,15 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const title = 'Products';
+const description =
+  'We build vertically-intergrated privacy products for the cryptocurrency space.';
+
 const Products: React.FC = () => (
-  <div className="custom-container-contents bg-tertiary-light" id="products">
-    <div className="custom-header">
-      <h2 className="custom-header-title m-4">Products</h2>
-      <h5>
-        We build vertically-intergrated privacy products for the cryptocurrency
-        space.
-      </h5>
-    </div>
+  <BaseContainer bg="bg-tertiary-light" id="products">
+    <TitleHeader title={title} description={description} />
+
     <div className="custom-contents w-full">
       <div className="custom-contents-item">
         <a
@@ -173,7 +174,7 @@ const Products: React.FC = () => (
         </div>
       </div>
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Products;

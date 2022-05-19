@@ -1,10 +1,13 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const title = 'Services';
+
 const Services: React.FC = () => (
-  <div className="custom-container-contents" id="services">
-    <div className="custom-header">
-      <h2 className="custom-header-title">Services</h2>
-    </div>
+  <BaseContainer id="services">
+    <TitleHeader title={title} />
+
     <div className="custom-contents lg:items-start">
       <div className="custom-contents-item">
         <img src="./assets/services-bespoke.png" alt="Bespoke" />
@@ -36,7 +39,7 @@ const Services: React.FC = () => (
         </p>
       </div>
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Services;

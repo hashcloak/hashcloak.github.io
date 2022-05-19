@@ -1,10 +1,13 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 
+const title = 'Our Mission';
+
 const Mission: React.FC = () => (
-  <div className="custom-container-contents" id="mission">
-    <div className="custom-header">
-      <h2 className="custom-header-title">Our Mission</h2>
-    </div>
+  <BaseContainer id="mission">
+    <TitleHeader title={title} />
+
     <div className="flex items-center justify-between">
       <img
         src="./assets/mission-image.png"
@@ -19,7 +22,7 @@ const Mission: React.FC = () => (
         </p>
       </div>
     </div>
-  </div>
+  </BaseContainer>
 );
 
 export default Mission;

@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import BurgerMenu from 'components/organisms/BurgerMenu';
 
 const Navbar: React.FunctionComponent = () => (
-  <header className="from top-0	custom-box-box-shadow custom-container fixed z-50 flex items-center justify-between py-3 w-full bg-gradient-to-r from-tertiary-main to-black">
+  <header className="custom-menu-bar top-0 fixed">
     <HashLink to="#main" smooth className="mx-1 my-0 text-white">
       <img
         src="./assets/company-logo.png"

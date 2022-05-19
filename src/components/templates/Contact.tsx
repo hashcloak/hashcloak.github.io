@@ -1,17 +1,19 @@
+import BaseContainer from 'components/organisms/BaseContainer';
+import TitleHeader from 'components/organisms/TitleHeader';
 import React from 'react';
 import { InlineWidget } from 'react-calendly';
 
+const title = 'Contact';
+const description = 'Schedule a free 30 minute consultation session';
+
 const Contact: React.FC = () => (
-  <div className="custom-container-contents bg-tertiary-light" id="contact">
-    <div className="custom-header lg:mb-0">
-      <h2 className="custom-header-title m-4">Contact</h2>
-      <h5>Schedule a free 30 minute consultation session</h5>
-    </div>
+  <BaseContainer id="contact" bg="bg-tertiary-light">
+    <TitleHeader title={title} description={description} />
     <InlineWidget
       url="https://calendly.com/hashcloak/30min"
       styles={{ height: '900px', width: '100%' }}
     />
-  </div>
+  </BaseContainer>
 );
 
 export default Contact;

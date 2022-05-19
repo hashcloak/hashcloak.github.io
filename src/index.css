@@ -42,12 +42,8 @@
     @apply overflow-x-hidden bg-gradient-to-tr from-secondary-light to-primary-main;
   }
 
-  .custom-container {
-    @apply px-10 md:px-24 lg:px-32 xl:px-72;
-  }
-
-  .custom-container-contents {
-    @apply custom-container flex flex-col items-center sm:pb-40 pb-20;
+  .custom-menu-bar {
+    @apply custom-box-shadow z-50 flex items-center justify-between px-10 py-3 w-full bg-gradient-to-r from-tertiary-main to-black md:px-24 lg:px-32 xl:px-72;
   }
 
   .custom-title {
@@ -59,11 +55,11 @@
   }
 
   .custom-header-title {
-    @apply text-primary-dark font-bold mt-0 mb-4;
+    @apply text-primary-dark font-bold mt-0 mb-4 whitespace-normal;
   }
 
   .custom-contents {
-    @apply flex flex-col flex-1  w-full lg:grid lg:grid-flow-col lg:grid-cols-3 justify-center items-center place-items-center lg:col-auto lg:gap-2;
+    @apply flex flex-col flex-1  w-full lg:grid lg:grid-flow-col lg:grid-cols-3 place-items-center lg:col-auto lg:gap-2;
   }
 
   .custom-contents-item {
