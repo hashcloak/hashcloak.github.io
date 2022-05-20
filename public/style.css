@@ -102,8 +102,18 @@ footer {
   background: linear-gradient(to right bottom, #2eb3ff 0%, white 100%);
 }
 
+#products,
+#research,
+#contact {
+  background-color: #f6f9fb;
+}
+
 .text-primary-dark {
   color: #0084cb;
+}
+
+.text-secondary-dark {
+  color: #868686;
 }
 
 /* lg */
