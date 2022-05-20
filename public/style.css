@@ -116,6 +116,18 @@ footer {
   color: #868686;
 }
 
+.bg-primary-dark {
+  background-color: #0084cb;
+}
+
+.bg-primary-dark {
+  background-color: #0084cb;
+}
+
+.bg-primary-light {
+  background-color: #ff9169;
+}
+
 /* lg */
 @media all and (min-width: 640px) and (max-width: 768px) {
   html,
