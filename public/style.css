@@ -102,6 +102,10 @@ footer {
   background: linear-gradient(to right bottom, #2eb3ff 0%, white 100%);
 }
 
+.text-primary-dark {
+  color: #0084cb;
+}
+
 /* lg */
 @media all and (min-width: 640px) and (max-width: 768px) {
   html,
