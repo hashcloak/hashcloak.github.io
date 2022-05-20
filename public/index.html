@@ -24,13 +24,86 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Hashcloak Inc.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <noscript>
+      <link
+        href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+    </noscript>
   </head>
   <body>
+    <noscript>
+      <main
+        class="flex flex-col justify-center m-0 min-h-full overflow-x-hidden"
+      >
+        <!-- Nav -->
+        <header
+          class="z-50 flex items-center justify-between px-10 py-3 w-full md:px-24 lg:px-32 xl:px-72"
+        >
+          <a href="#main" class="mx-1 my-0 text-white">
+            <img
+              src="./assets/company-logo.png"
+              alt="logo"
+              class="w-24 object-contain sm:w-full"
+            />
+          </a>
+          <div class="hidden lg:flex lg:justify-between">
+            <a href="#mission" class="mx-1 my-0 text-white"> Mission </a>
+            <a href="#products" class="mx-1 my-0 text-white"> Products </a>
+            <a href="#services" class="mx-1 my-0 text-white"> Services </a>
+            <a href="#research" class="mx-1 my-0 text-white"> Research </a>
+            <a href="#supporters" class="mx-1 my-0 text-white"> Supporters </a>
+            <a href="#announcements" class="mx-1 my-0 text-white">
+              Announcements
+            </a>
+            <a href="#contact" class="mx-1 my-0 text-white"> Contact </a>
+          </div>
+        </header>
 
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+        <!-- Main Visual -->
+        <div
+          class="items-normal flex flex-col items-center justify-center pb-20 pt-40 px-10 text-white sm:flex-row sm:items-center sm:justify-between sm:pb-40 sm:h-screen md:px-24 lg:px-32 xl:px-72"
+          id="main"
+        >
+          <div
+            className="z-10 flex flex-col justify-start w-full sm:w-2/4 md:w-full"
+          >
+            <div className="text-center sm:flex sm:flex-col sm:text-left">
+              <h2>Building</h2>
+              <h2>Vertically-Integrated</h2>
+              <h2>Privacy By Defaults</h2>
+            </div>
+            <h6 className="my-2.5 text-center font-bold sm:w-full sm:text-left">
+              HashCloak is an independent research lab focused on helping
+              organizations and blockchain communities integrate a privacy-first
+              approach into their processes.
+            </h6>
+          </div>
+          <img
+            src="./assets/main-visual-bg.png"
+            alt="main-visual-bg"
+            className="w-full object-contain"
+          />
+        </div>
+
+        <!-- Mission -->
+        <!-- Products -->
+        <!-- Services -->
+        <!-- Research -->
+        <!-- Supporters -->
+        <!-- Announcements -->
+        <!-- Contact -->
+        <!-- Footer -->
+      </main>
+    </noscript>
+
     <div id="root"></div>
 
     <!--

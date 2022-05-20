@@ -38,10 +38,6 @@
     @apply text-base text-primary-main no-underline font-bold	hover:text-primary-light;
   }
 
-  .custom-body {
-    @apply overflow-x-hidden bg-gradient-to-tr from-secondary-light to-primary-main;
-  }
-
   .custom-menu-bar {
     @apply custom-box-shadow z-50 flex items-center justify-between px-10 py-3 w-full bg-gradient-to-r from-tertiary-main to-black md:px-24 lg:px-32 xl:px-72;
   }
@@ -86,7 +82,7 @@
     text-shadow: 0 0 3px #e6e6e6;
   }
 
-  .custom-h-screen-v80 {
+  .custom-h-screen-vh80 {
     height: 80vh;
   }
 

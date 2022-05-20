@@ -8,27 +8,37 @@ const Announcements: React.FC = () => (
   <BaseContainer id="announcements">
     <TitleHeader title={title} />
     <div className="custom-contents lg:grid-cols-2 lg:items-start">
-      <a
-        href="https://write.as/hashcloaks-blog/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="custom-contents-item"
-      >
-        <img src="./assets/announcements-blogs.png" alt="blog" />
-        <h5>Research</h5>
-      </a>
-      <a
-        href="https://hashcloak.substack.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="custom-contents-item"
-      >
-        <img src="./assets/announcements-newsletter.png" alt="newsletter" />
-        <h5>HashCloak Newsletter</h5>
-        <p className="text-secondary-dark font-normal">
-          Periodic updates about current HashCloak projects and offerings
-        </p>
-      </a>
+      <div className="custom-contents-item">
+        <a
+          href="https://write.as/hashcloaks-blog/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/announcements-blogs.png"
+            alt="blog"
+            className="inline"
+          />
+          <h5>Research</h5>
+        </a>
+      </div>
+      <div className="custom-contents-item">
+        <a
+          href="https://hashcloak.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/announcements-newsletter.png"
+            alt="newsletter"
+            className="inline"
+          />
+          <h5>HashCloak Newsletter</h5>
+          <p className="text-secondary-dark font-normal">
+            Periodic updates about current HashCloak projects and offerings
+          </p>
+        </a>
+      </div>
     </div>
   </BaseContainer>
 );

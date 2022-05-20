@@ -21,7 +21,6 @@ const BurgerMenu: React.FC = () => {
 
       <Drawer
         anchor="right"
-        // variant="temporary"
         open={drawerOpen}
         onClose={handleDrawerToggle}
       >
