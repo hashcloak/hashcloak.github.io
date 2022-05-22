@@ -6,7 +6,7 @@ const Footer: React.FunctionComponent = () => {
 
   return (
     <footer className="custom-menu-bar">
-      <div className="">
+      <div>
         <p className="m-0 text-white">{currentYear} HashCloak Inc.</p>
       </div>
       <div>
