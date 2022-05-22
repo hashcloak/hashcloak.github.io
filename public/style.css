@@ -108,6 +108,10 @@ footer {
   background-color: #f6f9fb;
 }
 
+#supporters {
+  background: linear-gradient(to left top, #c0e3e5 0%, #fff 100%);
+}
+
 .text-primary-dark {
   color: #0084cb;
 }

@@ -63,19 +63,19 @@ const Supporters: React.FC = () => (
       <img
         src="./assets/supporters-esp.png"
         alt="esp"
-        className='className="row-span-1 object-contain" w-48'
+        className='object-contain" row-span-1 w-48'
       />
 
       <img
         src="./assets/supporters-binance-fellowship.png"
         alt="binance"
-        className='className="row-span-1 object-contain" w-48'
+        className='object-contain" row-span-1 w-48'
       />
 
       <img
         src="./assets/supporters-celo.png"
         alt="celo"
-        className='className="row-span-1 object-contain" w-48'
+        className='object-contain" row-span-1 w-48'
       />
     </div>
   </BaseContainer>
