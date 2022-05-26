@@ -139,7 +139,7 @@
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: white !important;
+    background: white;
   }
 
   /* Color/shape of close button cross */
@@ -163,7 +163,6 @@
       position: fixed;
       top: 0.725rem;
       right: 36px;
-      display: none !important;
       width: 36px;
     }
   }

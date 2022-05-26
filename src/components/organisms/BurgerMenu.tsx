@@ -15,37 +15,37 @@ const BurgerMenu: React.FC = () => {
       className="bm-btn"
     >
       <ul className="pt-5 px-5">
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#mission" smooth onClick={handleIsOpen}>
             Mission
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#products" smooth onClick={handleIsOpen}>
             Products
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#services" smooth onClick={handleIsOpen}>
             Services
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#research" smooth onClick={handleIsOpen}>
             Research
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#supporters" smooth onClick={handleIsOpen}>
             Supporters
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#announcements" smooth onClick={handleIsOpen}>
             Announcements
           </HashLink>
         </li>
-        <li id="react-burger-cross-btn">
+        <li>
           <HashLink to="#contact" smooth onClick={handleIsOpen}>
             Contact
           </HashLink>
