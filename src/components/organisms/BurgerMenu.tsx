@@ -15,43 +15,33 @@ const BurgerMenu: React.FC = () => {
       noOverlay
       className="my-menu"
     >
-      <ul className="pt-5 px-5">
-        <li>
-          <HashLink to="#mission" smooth onClick={handleIsOpen}>
-            Mission
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#products" smooth onClick={handleIsOpen}>
-            Products
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#services" smooth onClick={handleIsOpen}>
-            Services
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#research" smooth onClick={handleIsOpen}>
-            Research
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#supporters" smooth onClick={handleIsOpen}>
-            Supporters
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#announcements" smooth onClick={handleIsOpen}>
-            Announcements
-          </HashLink>
-        </li>
-        <li>
-          <HashLink to="#contact" smooth onClick={handleIsOpen}>
-            Contact
-          </HashLink>
-        </li>
-      </ul>
+      <HashLink to="#mission" smooth onClick={handleIsOpen}>
+        Mission
+      </HashLink>
+
+      <HashLink to="#products" smooth onClick={handleIsOpen}>
+        Products
+      </HashLink>
+
+      <HashLink to="#services" smooth onClick={handleIsOpen}>
+        Services
+      </HashLink>
+
+      <HashLink to="#research" smooth onClick={handleIsOpen}>
+        Research
+      </HashLink>
+
+      <HashLink to="#supporters" smooth onClick={handleIsOpen}>
+        Supporters
+      </HashLink>
+
+      <HashLink to="#announcements" smooth onClick={handleIsOpen}>
+        Announcements
+      </HashLink>
+
+      <HashLink to="#contact" smooth onClick={handleIsOpen}>
+        Contact
+      </HashLink>
     </Menu>
   );
 };

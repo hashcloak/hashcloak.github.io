@@ -160,6 +160,7 @@
   /* Individual item */
   .bm-item {
     display: inline-flex;
+    text-align: left;
   }
 
   @media (min-width: 1024px) {
