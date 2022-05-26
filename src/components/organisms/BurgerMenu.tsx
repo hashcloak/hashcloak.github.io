@@ -12,7 +12,8 @@ const BurgerMenu: React.FC = () => {
       isOpen={isOpen}
       onOpen={handleIsOpen}
       onClose={handleIsOpen}
-      className="bm-start"
+      noOverlay
+      className="my-menu"
     >
       <ul className="pt-5 px-5">
         <li>

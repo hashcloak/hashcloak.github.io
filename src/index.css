@@ -109,13 +109,9 @@
     box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
   }
 
-  .bm-start {
+  .my-menu {
     width: 30%;
-    height: 100%;
-    padding: 0;
     background-color: white;
-    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
-    appearance: none;
   }
 
   .bm-btn {
@@ -182,6 +178,10 @@
       top: 0.725rem;
       right: 36px;
       width: 36px;
+    }
+
+    .my-menu {
+      width: 50%;
     }
   }
 }
