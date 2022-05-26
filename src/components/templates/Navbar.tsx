@@ -3,12 +3,12 @@ import { HashLink } from 'react-router-hash-link';
 import BurgerMenu from 'components/organisms/BurgerMenu';
 
 const Navbar: React.FunctionComponent = () => (
-  <header className="custom-menu-bar top-0 fixed">
+  <header className="custom-menu-bar fixed top-0">
     <HashLink to="#main" smooth className="mx-1 my-0 text-white">
       <img
         src="./assets/company-logo.png"
         alt="logo"
-        className="w-24 object-contain sm:w-full"
+        className="h-full object-contain lg:w-full"
       />
     </HashLink>
     <div className="hidden lg:flex lg:justify-between">
