@@ -160,13 +160,20 @@
   @media (min-width: 1024px) {
     .bm-burger-bars,
     .bm-burger-button {
+      position: fixed;
+      top: 0.725rem;
+      right: 36px;
       display: none !important;
+      width: 36px;
     }
   }
 
   @media (max-width: 640px) {
     .bm-burger-button {
+      position: fixed;
       top: 0.725rem;
+      right: 36px;
+      width: 36px;
     }
   }
 }
