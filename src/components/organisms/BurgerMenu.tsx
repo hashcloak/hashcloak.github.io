@@ -12,7 +12,7 @@ const BurgerMenu: React.FC = () => {
       isOpen={isOpen}
       onOpen={handleIsOpen}
       onClose={handleIsOpen}
-      className="bm-btn"
+      className="bm-start"
     >
       <ul className="pt-5 px-5">
         <li>

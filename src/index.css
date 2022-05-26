@@ -109,12 +109,21 @@
     box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
   }
 
-  .bm-btn {
+  .bm-start {
     width: 30%;
     height: 100%;
     padding: 0;
     background-color: white;
     box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+    appearance: none;
+  }
+
+  .bm-btn {
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
     appearance: none;
   }
 
