@@ -5,6 +5,7 @@ import reducers from './features/reducers';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './index.css';
+import 'flowbite';
 
 const store = configureStore({ reducer: reducers });
 
