@@ -3,7 +3,7 @@ import React from 'react';
 
 const MainVisual: React.FC = () => (
   <BaseContainer
-    bg="custom-h-screen-vh80 pt-40 justify-center text-white bg-gradient-to-br from-tertiary-main to-white sm:flex-row sm:items-center sm:justify-between sm:h-screen"
+    bg="pt-40 justify-center text-white bg-gradient-to-br from-tertiary-main to-white sm:flex-row sm:items-center sm:justify-between sm:h-screen"
     id="main"
   >
     <div className="z-10 flex flex-col justify-start w-full sm:w-2/4 md:w-full">

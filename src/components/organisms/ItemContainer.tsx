@@ -15,23 +15,3 @@ const ItemContainer: VFC<Props> = ({ children, additionalItemClass }) => (
 );
 
 export default ItemContainer;
-// SERVICE
-// custom-contents
-// custom-contents-item
-//  - img
-//  - h5
-//  - p
-
-// Announcements
-// custom-contents
-// custom-contents-item
-// - img
-// - h5
-
-// PRODUCTs
-// custom-contents
-// custom-contents-item
-// - a
-// - img
-// - h5
-// - p

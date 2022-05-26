@@ -17,7 +17,7 @@ const Products: React.FC = () => (
           href="https://mesonmix.net/"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full"
+          className="place-items-center-center w-full"
         >
           <img
             src="./assets/products-meson-logo.png"

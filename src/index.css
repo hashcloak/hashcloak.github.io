@@ -35,7 +35,7 @@
   }
 
   a {
-    @apply text-base text-primary-main no-underline font-bold	hover:text-primary-light;
+    @apply text-base text-primary-main no-underline font-bold	hover:text-primary-light text-center;
   }
 
   .custom-menu-bar {
@@ -82,13 +82,9 @@
     text-shadow: 0 0 3px #e6e6e6;
   }
 
-  .custom-h-screen-vh80 {
-    height: 80vh;
-  }
-
   .custom-img {
     object-fit: contain;
-    width: 30px;
+    width: 2rem;
     margin: 0 10px 4px 10px;
   }
 
@@ -111,6 +107,67 @@
 
   .custom-box-shadow {
     box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+  }
+
+  .bm-btn {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
+    appearance: none;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    top: 1.25rem;
+    right: 36px;
+    width: 36px;
+    height: 1.25rem;
+  }
+
+  .bm-menu-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+  }
+
+  .bm-menu {
+    padding: 2.4em 2.5em 0;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: white !important;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: black;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-flex;
+  }
+
+  @media (min-width: 1024px) {
+    .bm-burger-bars,
+    .bm-burger-button {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .bm-burger-button {
+      top: 0.725rem;
+    }
   }
 }
 

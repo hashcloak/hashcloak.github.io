@@ -1,68 +1,57 @@
 import React, { useState } from 'react';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
 import { HashLink } from 'react-router-hash-link';
-import { ListItemText } from '@material-ui/core';
+import { slide as Menu } from 'react-burger-menu';
 
 const BurgerMenu: React.FC = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const handleDrawerToggle = () => {
-    setDrawerOpen(!drawerOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
+  const handleIsOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <IconButton color="secondary" onClick={handleDrawerToggle}>
-        <MenuIcon style={{ transform: 'scale(1.4)' }} />
-      </IconButton>
-
-      <Drawer
-        anchor="right"
-        open={drawerOpen}
-        onClose={handleDrawerToggle}
-      >
-        <List>
-          <ListItem>
-            <HashLink to="#mission" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Mission" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#products" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Products" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#services" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Services" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#research" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Research" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#supporters" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Supporters" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#announcements" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Announcements" />
-            </HashLink>
-          </ListItem>
-          <ListItem>
-            <HashLink to="#contact" smooth onClick={handleDrawerToggle}>
-              <ListItemText primary="Contact" />
-            </HashLink>
-          </ListItem>
-        </List>
-      </Drawer>
-    </div>
+    <Menu
+      right
+      isOpen={isOpen}
+      onOpen={handleIsOpen}
+      onClose={handleIsOpen}
+      className="bm-btn"
+    >
+      <ul className="pt-5 px-5">
+        <li id="react-burger-cross-btn">
+          <HashLink to="#mission" smooth onClick={handleIsOpen}>
+            Mission
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#products" smooth onClick={handleIsOpen}>
+            Products
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#services" smooth onClick={handleIsOpen}>
+            Services
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#research" smooth onClick={handleIsOpen}>
+            Research
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#supporters" smooth onClick={handleIsOpen}>
+            Supporters
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#announcements" smooth onClick={handleIsOpen}>
+            Announcements
+          </HashLink>
+        </li>
+        <li id="react-burger-cross-btn">
+          <HashLink to="#contact" smooth onClick={handleIsOpen}>
+            Contact
+          </HashLink>
+        </li>
+      </ul>
+    </Menu>
   );
 };
 
