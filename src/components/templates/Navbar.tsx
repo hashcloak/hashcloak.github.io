@@ -1,95 +1,43 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { HashLink } from 'react-router-hash-link';
 import BurgerMenu from 'components/organisms/BurgerMenu';
-import logo from '../../assets/company-logo.png';
 
-const useStyles = makeStyles(({ breakpoints }) => ({
-  container: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundImage: 'linear-gradient(to right, #2eb3ff, #000000)',
-    padding: '.7rem 18rem',
-    position: 'fixed',
-    top: '0',
-    width: '100%',
-    boxShadow: '0 1px 1px -1px rgba(0, 0, 0, 0.5)',
-    zIndex: 99,
-    [breakpoints.down('md')]: {
-      paddingRight: '8rem',
-      paddingLeft: '8rem',
-    },
-    [breakpoints.down('sm')]: {
-      paddingRight: '8rem',
-      paddingLeft: '8rem',
-    },
-    [breakpoints.down('xs')]: {
-      paddingRight: '2rem',
-      paddingLeft: '2em',
-    },
-  },
-  content: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    [breakpoints.down('sm')]: {
-      display: 'none',
-    },
-  },
-  link: {
-    color: 'white',
-    margin: '0 4px',
-  },
-  burger: {
-    display: 'none',
-    [breakpoints.down('sm')]: {
-      display: 'block',
-    },
-  },
-  logo: {
-    [breakpoints.down('xs')]: {
-      objectFit: 'contain',
-      width: '100px',
-    },
-  },
-}));
-
-const Navbar: React.FunctionComponent = () => {
-  const classes = useStyles();
-
-  return (
-    <header className={classes.container}>
-      <HashLink to="#main" smooth className={classes.link}>
-        <img src={logo} alt="logo" className={classes.logo} />
+const Navbar: React.FunctionComponent = () => (
+  <header className="custom-menu-bar fixed top-0">
+    <HashLink to="#main" smooth className="mx-1 my-0 text-white">
+      <img
+        src="./assets/hashcloak_letters-md.png"
+        alt="logo"
+        className="h-10 object-contain lg:h-14"
+      />
+    </HashLink>
+    <div className="hidden lg:flex lg:justify-between">
+      <HashLink to="#mission" smooth className="mx-1 my-0 text-white">
+        Mission
       </HashLink>
-      <div className={classes.content}>
-        <HashLink to="#mission" smooth className={classes.link}>
-          Mission
-        </HashLink>
-        <HashLink to="#products" smooth className={classes.link}>
-          Products
-        </HashLink>
-        <HashLink to="#services" smooth className={classes.link}>
-          Services
-        </HashLink>
-        <HashLink to="#research" smooth className={classes.link}>
-          Research
-        </HashLink>
-        <HashLink to="#supporters" smooth className={classes.link}>
-          Supporters
-        </HashLink>
-        <HashLink to="#announcements" smooth className={classes.link}>
-          Announcements
-        </HashLink>
-        <HashLink to="#contact" smooth className={classes.link}>
-          Contact
-        </HashLink>
-      </div>
-      <div className={classes.burger}>
-        <BurgerMenu />
-      </div>
-    </header>
-  );
-};
+      <HashLink to="#products" smooth className="mx-1 my-0 text-white">
+        Products
+      </HashLink>
+      <HashLink to="#services" smooth className="mx-1 my-0 text-white">
+        Services
+      </HashLink>
+      <HashLink to="#research" smooth className="mx-1 my-0 text-white">
+        Research
+      </HashLink>
+      <HashLink to="#supporters" smooth className="mx-1 my-0 text-white">
+        Supporters
+      </HashLink>
+      <HashLink to="#announcements" smooth className="mx-1 my-0 text-white">
+        Announcements
+      </HashLink>
+      <HashLink to="#contact" smooth className="mx-1 my-0 text-white">
+        Contact
+      </HashLink>
+    </div>
+    <div className="block lg:hidden">
+      <BurgerMenu />
+    </div>
+  </header>
+);
 
 export default Navbar;
