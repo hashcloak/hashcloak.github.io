@@ -6,9 +6,9 @@ const Navbar: React.FunctionComponent = () => (
   <header className="custom-menu-bar fixed top-0">
     <HashLink to="#main" smooth className="mx-1 my-0 text-white">
       <img
-        src="./assets/company-logo.png"
+        src="./assets/hashcloak_letters-md.png"
         alt="logo"
-        className="h-full object-contain lg:w-full"
+        className="h-10 object-contain lg:h-14"
       />
     </HashLink>
     <div className="hidden lg:flex lg:justify-between">
