@@ -4,15 +4,13 @@ import React from 'react';
 
 const titleForClients = 'Clients';
 const titleForGrants = 'Our work has been supported by';
-const description =
-  'We build vertically-intergrated privacy products for the cryptocurrency space.';
 
 const Supporters: React.FC = () => (
   <BaseContainer
     id="supporters"
     bg="bg-gradient-to-tl from-secondary-light to-secondary-main"
   >
-    <TitleHeader title={titleForClients} description={description} />
+    <TitleHeader title={titleForClients} />
 
     <div className="grid gap-4 grid-cols-1 items-center justify-center place-items-center text-center lg:grid-flow-col lg:grid-rows-2">
       <img
