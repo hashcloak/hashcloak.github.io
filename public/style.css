@@ -94,7 +94,7 @@ ul {
 /* Specific */
 header,
 footer {
-  background: linear-gradient(to right, #2eb3ff 0%, black 100%);
+  background: linear-gradient(to bottom right, #00314b 0%, #2eb3ff 100%);
   box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
 }
 

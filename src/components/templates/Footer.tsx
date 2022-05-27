@@ -5,7 +5,7 @@ const Footer: React.FunctionComponent = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="custom-menu-bar">
+    <footer className="custom-menu-bar items-center">
       <div>
         <p className="m-0 text-white">{currentYear} HashCloak Inc.</p>
       </div>

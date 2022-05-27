@@ -17,6 +17,7 @@ module.exports = {
         tertiary: {
           main: '#2eb3ff',
           light: '#F6F9FB',
+          dark: '#00314B',
         },
       },
       fontFamily: {

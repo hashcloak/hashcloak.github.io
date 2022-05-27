@@ -39,7 +39,7 @@
   }
 
   .custom-menu-bar {
-    @apply custom-box-shadow z-50 flex items-start lg:items-center justify-between px-10 py-3 w-full bg-gradient-to-r from-tertiary-main to-black md:px-24 lg:px-32 xl:px-72;
+    @apply custom-box-shadow z-50 flex items-start lg:items-center justify-between px-10 py-3 w-full bg-gradient-to-br from-tertiary-dark to-tertiary-main md:px-24 lg:px-32 xl:px-72;
   }
 
   .custom-title {
