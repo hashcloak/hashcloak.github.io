@@ -10,7 +10,7 @@ const Contact: React.FC = () => (
   <BaseContainer id="contact" bg="bg-tertiary-light">
     <TitleHeader title={title} description={description} />
     <InlineWidget
-      url="https://calendly.com/hashcloak/30min"
+      url="https://calendly.com/d/hhc-dnq-wfd/hashcloak-services-inquiries"
       styles={{ height: '900px', width: '100%' }}
     />
   </BaseContainer>
