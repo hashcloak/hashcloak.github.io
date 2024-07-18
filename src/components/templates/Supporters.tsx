@@ -69,12 +69,6 @@ const Supporters: React.FC = () => (
         alt="binance"
         className='object-contain" row-span-1 w-48'
       />
-
-      <img
-        src="./assets/supporters-celo.png"
-        alt="celo"
-        className='object-contain" row-span-1 w-48'
-      />
     </div>
   </BaseContainer>
 );
