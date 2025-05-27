@@ -14,8 +14,12 @@ const Footer = () => {
         
         {/* Row: Section titles side by side */}
         <div className="flex justify-between mb-4">
-          <h3 href="#services" className="font-bold text-lg flex-1 text-center">Services</h3>
-          <h3 href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="font-bold text-lg flex-1 text-center">Contact</h3>
+          <a href="#services">
+          <h3 className="font-bold text-lg flex-1 text-center">Services</h3>
+          </a>
+          <a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call">
+          <h3 className="font-bold text-lg flex-1 text-center">Contact</h3>
+          </a>
         </div>
         
         {/* Columns: Section content underneath titles */}
