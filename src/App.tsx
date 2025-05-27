@@ -1,13 +1,6 @@
 import React from 'react';
-import HomePage from './Components/Pages/HomePage';
-import './App.css';
+import Routes from 'components/Routes';
 
-function App() {
-  return (
-    <div className="App">
-      <HomePage />
-    </div>
-  );
-}
+const App: React.FC = () => <Routes />;
 
 export default App;

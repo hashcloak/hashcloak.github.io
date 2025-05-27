@@ -1,22 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Building privacy at every layer"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/hashcloak_letters-md.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Hashcloak Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <noscript>
+      <link
+        href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+    </noscript>
+  </head>
+  <body>
+    <noscript>
+      <main
+        class="flex flex-col justify-center m-0 min-h-full overflow-x-hidden"
+      >
+        <!-- Nav -->
+        <header
+          class="fixed z-50 top-0 flex items-center justify-between px-10 py-3 w-full md:px-24 lg:px-32 xl:px-72"
+        >
+          <a href="#main" class="mx-1 my-0 text-white">
+            <img
+              src="./assets/hashcloak_letters-md.png"
+              alt="logo"
+              class="h-12 object-contain lg:h-14"
+            />
+          </a>
+          <div class="hidden lg:flex lg:justify-between">
+            <a href="#mission" class="mx-1 my-0 text-white"> Mission </a>
+            <a href="#products" class="mx-1 my-0 text-white"> Products </a>
+            <a href="#services" class="mx-1 my-0 text-white"> Services </a>
+            <a href="#research" class="mx-1 my-0 text-white"> Research </a>
+            <a href="#supporters" class="mx-1 my-0 text-white"> Supporters </a>
+            <a href="#announcements" class="mx-1 my-0 text-white">
+              Announcements
+            </a>
+            <a href="#contact" class="mx-1 my-0 text-white"> Contact </a>
+          </div>
+          <!-- Burger menu -->
+          <div class="hamburger-menu top-0">
+            <input type="checkbox" id="menu-btn-check" />
+            <label for="menu-btn-check" class="menu-btn">
+              <span></span>
+            </label>
+            <div class="menu-content">
+                <ul>
+                  <li>
+                    <a href="#main" class="mx-1 my-0 text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="#mission" class="mx-1 my-0 text-white">Mission</a>
+                  </li>
+                  <li>
+                    <a href="#products" class="mx-1 my-0 text-white"
+                      >Products</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services" class="mx-1 my-0 text-white"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#research" class="mx-1 my-0 text-white"
+                      >Research</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#supporters" class="mx-1 my-0 text-white">
+                      Supporters
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#announcements" class="mx-1 my-0 text-white">
+                      Announcements
+                    </a>
+                  </li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </header>
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/logos/hashcloak_logo_colour-logo.png"  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="Hashcloak Inc - Independent Blockchain Research Lab focussed on privacy-preserving technologies" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logos/hashcloak_logo_colour-logo.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>Hashcloak Inc.</title>
-</head>
+        <!-- Main Visual -->
+        <section
+          class="items-normal flex flex-col items-center justify-center pb-20 pt-40 px-10 text-white sm:flex-row sm:items-center sm:justify-between sm:pb-40 sm:h-screen md:px-24 lg:px-32 xl:px-72"
+          id="main"
+        >
+          <div
+            class="z-10 flex flex-col justify-start w-full sm:w-2/4 md:w-full"
+          >
+            <div class="text-center sm:flex sm:flex-col sm:text-left">
+              <h2>Building</h2>
+              <h2>Vertically-Integrated</h2>
+              <h2>Privacy By Defaults</h2>
+            </div>
+            <h6 class="my-2.5 text-center font-bold sm:w-full sm:text-left">
+              HashCloak is an independent research lab focused on helping
+              organizations and blockchain communities integrate a privacy-first
+              approach into their processes.
+            </h6>
+          </div>
+          <img
+            src="./assets/main-visual-bg.png"
+            alt="main-visual-bg"
+            class="w-full object-contain"
+          />
+        </section>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+        <!-- Mission -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="mission"
+        >
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Our Mission
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div class="flex items-center justify-between">
+            <img
+              src="./assets/mission-image.png"
+              alt="mission"
+              class="w-2/5 object-contain sm:w-72 md:w-96"
+            />
+            <div class="w-3/5 max-w-lg text-left">
+              <p>
+                Our mission is to make it as easy as possible to use privacy
+                enhancing technology (PET) securely and with the best UX
+                possible for the cryptocurrency industry.
+              </p>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <!-- Products -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="products"
+        >
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Products
+            </h2>
+            <h5>
+              We build vertically-intergrated privacy products for the
+              cryptocurrency space.
+            </h5>
+          </div>
+          <!-- Contents -->
+          <div
+            class="flex flex-1 flex-col place-items-center w-full lg:grid lg:gap-2 lg:grid-flow-col lg:col-auto lg:grid-cols-3"
+          >
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <a
+                href="https://mesonmix.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center w-full"
+              >
+                <img
+                  src="./assets/products-meson-logo.png"
+                  alt="meson"
+                  class="inline w-36 object-contain lg:w-48"
+                />
+                <h5>Meson</h5>
+                <p class="mb-1.5 mt-0 text-center text-secondary-dark">
+                  A mix network for cryptocurrency transactions
+                </p>
+              </a>
+              <div class="flex justify-center">
+                <a
+                  href="https://twitter.com/MesonMixnet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/twitter-logo.png"
+                    alt="twitter"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://docs.mesonmix.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-logo-black.png"
+                    alt="github"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://app.element.io/#/room/#meson-community:matrix.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/element-logo.svg"
+                    alt="element"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <a
+                href="https://mesonmix.net/wallet"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center w-full"
+              >
+                <img
+                  src="./assets/products-mesonSafe-logo.png"
+                  alt="meson-safe"
+                  class="inline p-4 w-36 object-contain lg:w-48"
+                />
+                <h5>MesonSafe</h5>
+                <p class="mb-1.5 mt-0 text-center text-secondary-dark">
+                  A privacy-focused wallet for managing your crypto assets
+                </p>
+              </a>
+              <div class="flex justify-center">
+                <a
+                  href="https://twitter.com/MesonMixnet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/twitter-logo.png"
+                    alt="twitter"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://docs.mesonmix.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-logo-black.png"
+                    alt="github"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <a
+                href="https://stoffelmpc.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center w-full"
+              >
+                <img
+                  src="./assets/products-stoffelMPC-logo.png"
+                  alt="stoffelMPC"
+                  class="inline pt-8 w-36 object-contain lg:w-48"
+                />
+                <h5>StoffelMPC</h5>
+                <p class="mb-1.5 mt-0 text-center text-secondary-dark">
+                  A framework for building expressive confidential blockchain
+                  applications using multiparty computation (MPC)
+                </p>
+              </a>
+              <div class="flex justify-center">
+                <a
+                  href="https://twitter.com/StoffelFinance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/twitter-logo.png"
+                    alt="twitter"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://github.com/hashcloak/stoffelMPC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-logo-black.png"
+                    alt="github"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://cryptpad.fr/form/#/3/form/view/3b4ed9a8bde9ba12924acdd86fad2a39/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/products-developer-survey.svg"
+                    alt="developer-survey"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://docs.stoffelmpc.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/products-mkbook.png"
+                    alt="documentation"
+                    class="mx-2.5 w-7 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <!-- Services -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="services"
+        >
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Services
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div
+            class="flex flex-1 flex-col place-items-center w-full lg:grid lg:gap-2 lg:grid-flow-col lg:col-auto lg:grid-cols-3 lg:items-start"
+          >
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <img src="./assets/services-bespoke.png" alt="Bespoke" />
+              <h5 class="py-1 font-bold lg:py-2">Bespoke R&amp;D</h5>
+              <p class="text-secondary-dark">
+                Have a problem that can leverage anonymous network, ZKPs, MPC or
+                another privacy enhancing technique? We can help get you started
+                and assist your team with the initial prototyping phase of
+                integrating these tools into your product.
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <img src="./assets/services-audits.png" alt="security-audits" />
+              <h5 class="py-1 font-bold lg:py-2">Security Audits</h5>
+              <p class="text-secondary-dark">
+                We assist teams to securely integrate advanced cryptographic
+                tooling into their product and conduct security reviews towards
+                that end.
+              </p>
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <img src="./assets/services-advisory.png" alt="advisory" />
+              <h5 class="py-1 font-bold lg:py-2">Advisory</h5>
+              <p class="text-secondary-dark">
+                Need someone that can stay on top of the ongoings in the crypto
+                (graphy and currency) space in order to get a step ahead of the
+                competition? We assist teams with developing strategies with
+                respect to privacy enhancing technology in the fast moving
+                cryptocurrency industry
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Research -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="research"
+        >
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Research
+            </h2>
+            <h5>
+              Here is a taste of the research we conduct and open problems we
+              are currently tackling.
+            </h5>
+          </div>
+          <!-- Contents -->
+          <div
+            class="flex flex-1 place-items-center w-full lg:grid lg:gap-2 lg:col-auto lg:items-start"
+          >
+            <div
+              class="flex flex-col flex-wrap items-center justify-center w-full lg:flex-row lg:justify-around"
+            >
+              <div class="mb-1 w-72 bg-white rounded-md shadow-md">
+                <div class="flex flex-col justify-between p-4 h-full text-left">
+                  <a
+                    href="https://medium.com/initc3org/honeybadgerswap-making-mpc-as-a-sidechain-364bebdb10a5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col justify-start text-left text-black"
+                  >
+                    <h6>HoneyBadgerSwap: Making MPC as a Sidechain</h6>
+                    <small>2021</small>
+                    <p style="font-weight: normal">
+                      It is well known that blockchains (just the public
+                      bulletin board part) on their own do not provide strong
+                      confidentiality and privacy...
+                    </p>
+                  </a>
+                  <a
+                    href="https://medium.com/initc3org/honeybadgerswap-making-mpc-as-a-sidechain-364bebdb10a5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-1.5 py-1.5 text-center text-white hover:text-white bg-primary-dark hover:bg-primary-light rounded-lg hover:opacity-80"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+              <div class="mb-1 w-72 bg-white rounded-md shadow-md">
+                <div class="flex flex-col justify-between p-4 h-full text-left">
+                  <a
+                    href="https://arxiv.org/abs/2005.14051"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col justify-start text-left text-black"
+                  >
+                    <h6>
+                      Blockchain is Watching You: Profiling and Deanonymizing
+                      Ethereum Users
+                    </h6>
+                    <small>2020</small>
+                    <p style="font-weight: normal">
+                      Ethereum is the largest public blockchain by usage. It
+                      applies an account-based model, which is...
+                    </p>
+                  </a>
+                  <a
+                    href="https://arxiv.org/abs/2005.14051"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-1.5 py-1.5 text-center text-white hover:text-white bg-primary-dark hover:bg-primary-light rounded-lg hover:opacity-80"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+              <div class="mb-1 w-72 bg-white rounded-md shadow-md">
+                <div class="flex flex-col justify-between p-4 h-full text-left">
+                  <a
+                    href="https://eprint.iacr.org/2019/1111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col justify-start text-left text-black"
+                  >
+                    <h6>
+                      Short Paper: Towards Characterizing Sybil Attacks in
+                      Cryptocurrency Mixers
+                    </h6>
+                    <small>2019</small>
+                    <p style="font-weight: normal">
+                      Sybil attacks are a well-studied problem in peer-to-peer
+                      networking systems. However...
+                    </p>
+                  </a>
+                  <a
+                    href="https://eprint.iacr.org/2019/1111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-1.5 py-1.5 text-center text-white hover:text-white bg-primary-dark hover:bg-primary-light rounded-lg hover:opacity-80"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Supporters -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="supporters"
+        >
+          <!-- Clients -->
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Clients
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div
+            class="grid gap-4 grid-cols-1 items-center justify-center place-items-center text-center lg:grid-flow-col lg:grid-rows-2"
+          >
+            <img
+              src="./assets/supporters-perpetual-protocol.png"
+              alt="perpetual-protocol"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-flashbots.png"
+              alt="flashbots"
+              class="row-span-1 w-28 object-contain"
+            />
+            <img
+              src="./assets/supporters-hakka-finance.svg"
+              alt="hakka-finance"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-ethereum-foundation.png"
+              alt="ethereum-foundation"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-panther-protocol.png"
+              alt="panther-protocol"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-light-protocol.svg"
+              alt="light-protocol"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-sacred-finance.svg"
+              alt="sacred-finance"
+              class="row-span-1 w-48 object-contain"
+            />
+            <img
+              src="./assets/supporters-fuel.png"
+              alt="fuel"
+              class="row-span-1 w-32 object-contain"
+            />
+          </div>
+
+          <!-- Grants -->
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Our work has been supported by
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div
+            class="grid gap-4 grid-cols-1 items-center justify-center place-items-center text-center lg:grid-flow-col lg:grid-rows-1"
+          >
+            <img
+              src="./assets/supporters-esp.png"
+              alt="esp"
+              class="object-contain&quot; row-span-1 w-48"
+            />
+
+            <img
+              src="./assets/supporters-binance-fellowship.png"
+              alt="binance"
+              class="object-contain&quot; row-span-1 w-48"
+            />
+
+            <img
+              src="./assets/supporters-celo.png"
+              alt="celo"
+              class="object-contain&quot; row-span-1 w-48"
+            />
+          </div>
+        </section>
+
+        <!-- Announcements -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="announcements"
+        >
+          <!-- Header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Keeping up HashCloak
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div
+            class="flex flex-1 flex-col place-items-center w-full lg:grid lg:gap-2 lg:grid-flow-col lg:col-auto lg:grid-cols-2 lg:items-start"
+          >
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <a
+                href="https://write.as/hashcloaks-blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/announcements-blogs.png"
+                  alt="blog"
+                  class="inline"
+                />
+                <h5>Research</h5>
+              </a>
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center pb-5 w-72 lg:pb-0 lg:w-full"
+            >
+              <a
+                href="https://hashcloak.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center"
+              >
+                <img
+                  src="./assets/announcements-newsletter.png"
+                  alt="newsletter"
+                  class="inline"
+                />
+                <h5>HashCloak Newsletter</h5>
+                <p class="text-secondary-dark font-normal">
+                  Periodic updates about current HashCloak projects and
+                  offerings
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section
+          class="flex flex-col items-center pb-20 px-10 sm:pb-40 md:px-24 lg:px-32 xl:px-72"
+          id="contact"
+        >
+          <!-- header -->
+          <div
+            class="mb-10 mt-20 w-full text-center sm:mb-20 sm:mt-40 lg:w-8/12"
+          >
+            <h2
+              class="m-4 mb-4 mt-0 text-primary-dark whitespace-normal font-bold"
+            >
+              Contact
+            </h2>
+          </div>
+          <!-- Contents -->
+          <div>
+            <a
+              href="mailto:info@hashcloak.com"
+              class="flex flex-row items-center justify-center px-8 py-3 w-full text-center text-white hover:text-white bg-primary-dark rounded-lg hover:opacity-80"
+            >
+              <img
+                src="./assets/mainvisual-contact-white.png"
+                alt="contact"
+                class="mr-1 w-7"
+              />
+              <span class="pt-1"> Send email </span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+          class="z-50 bottom-0 flex items-center justify-between px-10 py-3 w-full md:px-24 lg:px-32 xl:px-72"
+        >
+          <div>
+            <p class="m-0 text-white">2022 HashCloak Inc.</p>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="https://twitter.com/hashcloak"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:opacity-60"
+            >
+              <img
+                src="./assets/twitter-logo-white.png"
+                alt="twitter-logo"
+                class="w-9 object-contain"
+              />
+            </a>
+            <a
+              href="https://github.com/hashcloak"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ml-7 hover:opacity-60"
+            >
+              <img
+                src="./assets/github-logo.png"
+                alt="github-logo"
+                class="w-9 object-contain"
+              />
+            </a>
+          </div>
+        </footer>
+      </main>
+    </noscript>
+
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>

@@ -1,29 +1,36 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
-  ],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false,
   theme: {
     extend: {
-      fontFamily: {
-        'sans': ['Montserrat', 'system-ui', 'sans-serif'],
-      },
       colors: {
         primary: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          200: '#c7d2fe',
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
-        }
-      }
+          light: '#FF9169',
+          main: '#38C6F4',
+          dark: '#0084CB',
+        },
+        secondary: {
+          main: '#fff',
+          dark: '#868686',
+          light: '#c0e3e5',
+        },
+        tertiary: {
+          main: '#2eb3ff',
+          light: '#F6F9FB',
+          dark: '#00314B',
+        },
+      },
+      fontFamily: {
+        montsarrat: ['Montserrat,sans-serif', 'sans-serif'],
+      },
+      spacing: {
+        '95%': '95%',
+      },
     },
   },
-  plugins: [],
-}
+  variants: {
+    extend: {},
+  },
+  plugins: [require('flowbite/plugin')],
+  content: ['./node_modules/flowbite/**/*.js'],
+};
