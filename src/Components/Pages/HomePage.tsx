@@ -87,14 +87,12 @@ const HomePage = () => {
     };
   }, []);
 
-  const renderMobileMenu = () => null; // Removed - handled by Navbar component
-
   return (
     <div className="font-sans">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section id="#home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="md:flex items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">

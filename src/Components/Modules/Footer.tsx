@@ -14,12 +14,8 @@ const Footer = () => {
         
         {/* Row: Section titles side by side */}
         <div className="flex justify-between mb-4">
-          <a href="#services">
-          <h3 className="font-bold text-lg flex-1 text-center">Services</h3>
-          </a>
-          <a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call">
-          <h3 className="font-bold text-lg flex-1 text-center">Contact</h3>
-          </a>
+          <h3 className="font-bold text-lg flex-1 text-center"><a href="#services">Services</a></h3>
+          <h3 className="font-bold text-lg flex-1 text-center"><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call">Contact</a></h3>
         </div>
         
         {/* Columns: Section content underneath titles */}
@@ -30,12 +26,15 @@ const Footer = () => {
             <div className="mb-2"><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="text-gray-400 hover:text-white">Bespoke R&D</a></div>
             <div><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="text-gray-400 hover:text-white">Concierge Advisory</a></div>
           </div>
+
           
           {/* Resources content column */}
+          {/*
           <div className="flex-1 text-center">
-            <div className="mb-2"><a className="text-gray-400 hover:text-white">Blog</a></div>
-            <div><a className="text-gray-400 hover:text-white">Research Papers</a></div>
+            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Blog</a></div>
+            <div><a href="#" className="text-gray-400 hover:text-white">Research Papers</a></div>
           </div>
+          */}
           
           {/* Contact content column */}
           <div className="flex-1 text-center">
