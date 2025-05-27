@@ -1,0 +1,278 @@
+.App {
+    text-align: left;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Header styles */
+  .App-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .App-header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation styles */
+  .nav-link {
+    position: relative;
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #4f46e5;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4f46e5;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #4f46e5;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile menu styles */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .mobile-menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Hero section styles */
+  .hero-gradient {
+    background: linear-gradient(135deg, 
+      rgba(79, 70, 229, 0.1) 0%, 
+      rgba(147, 51, 234, 0.1) 100%);
+  }
+  
+  .hero-card {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+  }
+  
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      rgba(79, 70, 229, 0.05) 0%, 
+      rgba(147, 51, 234, 0.05) 100%);
+    z-index: -1;
+  }
+  
+  /* Service card styles */
+  .service-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+    background: white;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-color: #4f46e5;
+  }
+  
+  .service-card .icon-container {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover .icon-container {
+    transform: scale(1.1);
+  }
+  
+  /* Project card styles */
+  .project-card {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    border-radius: 12px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .project-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  /* Testimonial styles */
+  .testimonial-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  
+  .testimonial-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .testimonial-dot.active {
+    background-color: white;
+  }
+  
+  /* Stats counter animation */
+  .stat-number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #2563eb;
+    line-height: 1;
+  }
+  
+  /* Footer styles */
+  .footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white;
+  }
+  
+  /* Form styles */
+  .form-input {
+    transition: all 0.3s ease;
+    border: 1px solid #d1d5db;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Loading states */
+  .loading {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  /* Responsive utilities */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem !important;
+      line-height: 1.2;
+    }
+    
+    .section-title {
+      font-size: 2rem !important;
+    }
+    
+    .service-card,
+    .project-card {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .App-header,
+    .mobile-menu,
+    .testimonial-dots {
+      display: none !important;
+    }
+    
+    .hero-gradient,
+    .service-card,
+    .project-card {
+      background: white !important;
+      box-shadow: none !important;
+    }
+  }

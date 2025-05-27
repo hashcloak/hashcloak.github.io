@@ -1,176 +1,69 @@
-import React, { useState } from "react";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import { useMediaQuery } from "@material-ui/core";
-import nav from "./nav.svg";
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
-const useStyles = makeStyles(({ breakpoints, palette }) => ({
-  container: {
-    display: "flex",
-    width: "100%",
-    alignItems: "center",
-    backgroundColor: "#131313",
-    padding: "0 1rem",
-    position: "fixed",
-    zIndex: 1000,
-    borderBottom: `.8px solid ${palette.primary.main}`,
-    [breakpoints.down('sm')]: {
-      height: "60px",
-    }
-  },
-  linksContainer: {
-    position: "absolute",
-    width: "100%",
-    padding: "1.5rem",
-  },
-  navLinkContainer: {
-    [breakpoints.up('md')]: {
-      margin: "0 1rem",
-    }
-  },
-  navLink: {
-    color: palette.primary.light,
-    textDecoration: "none",
-    fontSize: "1.1rem",
-    '&:hover': {
-      borderBottom: `5px solid ${palette.primary.main}`
-    },
-  },
-  brandName: {
-    color: palette.primary.main,
-    fontSize: "1.5rem",
-  },
-  menuToggle: {
-    display: "none",
-    width: "32px",
-    marginTop: "10px",
-    zIndex: 400000,
-    height: "32px",
-    transition: "transform 0.4s ease-in",
-    [breakpoints.down(1170)]: {
-      display: "block",
-      cursor: "pointer",
-      position: "absolute",
-      right: "2rem",
-      top: ".8rem",
-    },
-    [breakpoints.down('sm')]: {
-      right: "1rem",
-      top: "0.5rem"
-    }
-  },
-  wrapper: {
-    background: "black",
-    position: "absolute",
-    left: 0,
-    width: "100%",
-    height: "105vh",
-    zIndex: 400000,
-  },
-  mobileLinkContainer: {
-    zIndex: 1000,
-    display: "flex",
-    width: "100%",
-    marginTop: "20vh",
-    height: "auto",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  mobileLinkWrapper: {
-    marginTop: "2rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  mobileLink: {
-    textDecoration: "none",
-    fontSize: "3rem",
-    color: palette.primary.light,
-    '&:hover': {
-      color: palette.primary.main,
-      transition: "0.33s ease-in-out",
-    },
-    '&:active': {
-      color: palette.primary.main,
-      transition: "0.33s ease-in-out",
-    },
-  },
-  img: {
-    //width: "30%",
-    margin: "2rem 0",
-    paddingRight: "3rem",
-    position: "relative",
-    left: "30%",
-    "transform": "translate(-50%)",
-    [breakpoints.down('lg')]: {
-      width: "40%",
-    },
-    [breakpoints.down('xs')]: {
-      width: "100%",
-      margin: 0,
-    },
-    [breakpoints.up('xl')]: {
-      margin: 0,
-      width: "40%",
-    }
-  },
-}))
+const Navbar = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-const Navbar: React.FunctionComponent = () => {
-
-  const classes = useStyles();
-
-  const [isNavVisible, setIsNavVisible] = useState(false);
-
-  const isMobile = useMediaQuery("(max-width: 1170px)");
-
-  const toggleNav = () => {
-    setIsNavVisible(!isNavVisible);
-  }
+  const renderMobileMenu = () => (
+    <div className={`fixed inset-0 z-50 bg-white transition-transform duration-300 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className="flex justify-between items-center p-4 border-b">
+        <div className="font-bold text-xl text-indigo-600 tracking-wide" style={{ fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.05em" }}>
+        <img src="/logos/hashcloak_logo_colour-logo-text.png" alt="HashCloak" className="h-20 w-20 object-contain mb-3"/>
+        </div>
+        <button
+          onClick={() => setMobileMenuOpen(false)}
+          className="text-gray-500 hover:text-gray-700"
+        >
+          <X className="h-6 w-6" />
+        </button>
+      </div>
+      <nav className="p-4">
+        <ul className="space-y-4">
+          <li><a href="#" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+          <li><a href="#services" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Services</a></li>
+          <li><a href="#projects" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Work</a></li>
+          <li><a href="#testimonials" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Testimonials</a></li>
+          <li><a href="#contact" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  );
 
   return (
-    <nav className={classes.container}>
-      <Grid container justify="flex-start">
-        <Grid item >
-          <h1 className={classes.brandName}>HashCloak</h1>
-        </Grid>
-        <div className={classes.menuToggle} onClick={toggleNav}>
-          <img src={nav} alt="menuIcon" />
-        </div>
-        {!isMobile && <Grid container justify="flex-end" className={classes.linksContainer}>
+    <>
+      {/* Mobile Menu */}
+      {renderMobileMenu()}
 
-          <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="#services">Services</a>
-          </Grid>
-          <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="#research">Research</a>
-          </Grid>
-          <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="https://write.as/hashcloaks-blog/">Blogs</a>
-          </Grid>
-          <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="#newsletters">Newsletters</a>
-          </Grid>
-          <Grid item className={classes.navLinkContainer}>
-            <a className={classes.navLink} href="#contact">Contact</a>
-          </Grid>
-        </Grid>}
-        {(isMobile && isNavVisible) && (
-          <div className={classes.wrapper}>
-            <div className={classes.menuToggle} onClick={toggleNav} style={{ float: "right", margin: "0.7rem 0" }}>
-              <img src={nav} alt="menuIcon" />
-            </div>
-            <ul className={classes.mobileLinkContainer}>
-              <div className={classes.mobileLinkWrapper} >
-                <a className={classes.mobileLink} target="_blank" rel="noopener noreferrer" href="https://write.as/hashcloaks-blog/">Blog</a>
-              </div>
-            </ul>
+      {/* Header */}
+      <header className="fixed w-full bg-white shadow-sm z-40">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          <div className="font-bold text-xl text-indigo-600 tracking-wide" style={{ fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.05em" }}>
+          <img src="/logos/hashcloak_logo_colour-logo-text.png" alt="HashCloak" className="h-20 w-20 object-contain mb-3"/>
           </div>
-        )}
-      </Grid>
-    </nav >
+          <nav className="hidden md:block">
+            <ul className="flex space-x-8">
+              <li><a href="#" className="text-sm font-medium hover:text-indigo-600">Home</a></li>
+              <li><a href="#services" className="text-sm font-medium hover:text-indigo-600">Services</a></li>
+              <li><a href="#projects" className="text-sm font-medium hover:text-indigo-600">Work</a></li>
+              <li><a href="#testimonials" className="text-sm font-medium hover:text-indigo-600">Testimonials</a></li>
+              <li><a href="#contact" className="text-sm font-medium hover:text-indigo-600">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            className="md:hidden text-gray-500 hover:text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <Menu className="h-6 w-6" />
+          </button>
+          <a 
+            href="#contact" 
+            className="hidden md:flex items-center text-sm bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </header>
+    </>
   );
 };
 

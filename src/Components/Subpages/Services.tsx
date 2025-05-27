@@ -1,66 +1,52 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import LayoutContainer from "../Modules/LayoutContainer";
-import { makeStyles } from "@material-ui/core/styles"
+import React from 'react';
+import { Shield, Cpu, Lock, ChevronRight } from 'lucide-react';
 
-
-const useStyles = makeStyles(({ breakpoints, palette }) => ({
-  container: {
-    [breakpoints.up('lg')]: {
-      marginTop: "3rem",
+const Services = () => {
+  const services = [
+    {
+      title: "Security Auditing",
+      description: "Comprehensive security reviews for cryptographic protocols, smart contracts, and blockchain infrastructure.",
+      icon: <Shield className="h-8 w-8 text-blue-600" />
     },
-    [breakpoints.up('xl')]: {
-      marginTop: "5rem",
+    {
+      title: "Bespoke R&D",
+      description: "Custom research and implementation of cutting-edge cryptographic solutions for blockchain projects.",
+      icon: <Cpu className="h-8 w-8 text-blue-600" />
+    },
+    {
+      title: "Concierge Advisory",
+      description: "Direct access to our team of cryptographers and researchers for ongoing support and consultation.",
+      icon: <Lock className="h-8 w-8 text-blue-600" />
     }
-  },
-  textContainer: {
-    padding: "2rem"
-  },
-  title: {
-    color: palette.primary.main, fontSize: "2rem",
-    [breakpoints.up('lg')]: {
-      fontSize: "2.8rem"
-    }
-  },
-  subhead: { color: palette.primary.light, fontSize: "1.1rem", },
-  text: {
-    fontSize: "1.5rem",
-    color: palette.primary.light,
-    '&:hover': { color: palette.primary.main, transition: "ease-in-out 0.2s", },
-    [breakpoints.down('md')]: {
-      fontSize: "1.5rem",
-      margin: 0,
-    }
-  },
-  img: {
-    width: "85%",
-    [breakpoints.down('md')]: {
-      width: "100%",
-    }
-  },
-}));
+  ];
 
-
-const Services: React.FC = () => {
-  const classes = useStyles();
   return (
-    <div id="services">
-      <LayoutContainer>
-        <Grid container alignItems="center" className={classes.container}>
-          <Grid item xs={12} md={5} className={classes.textContainer}>
-            <h1 className={classes.title}>Services</h1>
-            <p className={classes.text}>Smart contract audits</p>
-            <p className={classes.text}>Privacy audits</p>
-            <p className={classes.text}>Cryptographic implementation audits</p>
-            <p className={classes.text}>Bespoke R&D for blockchain-related projects</p>
-            <p className={classes.text}>General Cryptography and Blockchain consulting</p>
-          </Grid>
-          <Grid item xs={12} md={7}>
-            <img className={classes.img} src="/graphics/contract.png" alt="3d rendering of smart contract with a lock" />
-          </Grid>
-        </Grid>
-      </LayoutContainer>
-    </div>
-  )
-}
+    <section id="services" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            We offer specialized services to help secure and enhance your blockchain projects with cutting-edge cryptography
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+              <div className="mb-4">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+              <p className="text-gray-600 mb-4">{service.description}</p>
+              <a href="#contact" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                Learn more
+                <ChevronRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default Services;

@@ -1,44 +1,52 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
 
-
-
-
-const useStyles = makeStyles(({ breakpoints }) => ({
-  container: {
-    display: "flex",
-    width: "100%",
-    alignItems: "center",
-    borderTop: "0.5px solid #1F2223",
-    padding: ".5rem 2rem",
-    zIndex: 2000,
-    height: "80px",
-    marginTop: "100px",
-    "& > small": {
-      marginRight: "1rem",
-    }
-  },
-  small: {
-    fontSize: "14px",
-    color: "#868686",
-    [breakpoints.down('sm')]: {
-      fontSize: "12px",
-    },
-
-  }
-}))
-
-const Footer: React.FunctionComponent = () => {
-  const currentYear = new Date().getFullYear();
-  const classes = useStyles();
+const Footer = () => {
   return (
-    <footer className={classes.container}>
-      <small className={classes.small}>
-        {currentYear} HashCloak Inc.
-      </small>
-      <small className={classes.small}>
-        Designed and developed by @sweetpea22 (twitter).
-      </small>
+    <footer className="bg-gray-900 text-white pt-12 pb-6">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* First row: HashCloak section */}
+        <div className="mb-10 text-center">
+          <div className="font-bold text-2xl text-indigo-500 mb-4">HASHCLOAK</div>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Building full-stack privacy into blockchain products
+          </p>
+        </div>
+        
+        {/* Row: Section titles side by side */}
+        <div className="flex justify-between mb-4">
+          <h3 className="font-bold text-lg flex-1 text-center">Services</h3>
+          <h3 className="font-bold text-lg flex-1 text-center">Resources</h3>
+          <h3 className="font-bold text-lg flex-1 text-center">Contact</h3>
+        </div>
+        
+        {/* Columns: Section content underneath titles */}
+        <div className="flex justify-between mb-8">
+          {/* Services content column */}
+          <div className="flex-1 text-center">
+            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Security Auditing</a></div>
+            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Bespoke R&D</a></div>
+            <div><a href="#" className="text-gray-400 hover:text-white">Concierge Advisory</a></div>
+          </div>
+          
+          {/* Resources content column */}
+          <div className="flex-1 text-center">
+            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Blog</a></div>
+            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Case Studies</a></div>
+            <div><a href="#" className="text-gray-400 hover:text-white">Research Papers</a></div>
+          </div>
+          
+          {/* Contact content column */}
+          <div className="flex-1 text-center">
+            <div className="mb-2"><span className="text-gray-400">info@hashcloak.com</span></div>
+            <div><span className="text-gray-400">Toronto, Canada</span></div>
+          </div>
+        </div>
+        
+        {/* Copyright row */}
+        <div className="pt-8 mt-8 border-t border-gray-800 text-gray-400 text-sm text-center">
+          <p>© {new Date().getFullYear()} HashCloak Inc. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
   );
 };

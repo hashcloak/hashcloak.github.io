@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+/* import React, { ReactNode } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 type ContainerProps = {
@@ -37,3 +37,6 @@ const LayoutContainer = ({
 };
 
 export default LayoutContainer;
+ */
+
+export {}

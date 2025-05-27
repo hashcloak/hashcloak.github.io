@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import Grid from "@material-ui/core/Grid";
 import LayoutContainer from "../Modules/LayoutContainer";
 import { makeStyles } from "@material-ui/core/styles"
@@ -106,4 +106,5 @@ const Newsletters: React.FC = () => {
     </>
   )
 }
-export default Newsletters;
+export default Newsletters; */
+export {}
