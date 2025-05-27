@@ -52,13 +52,13 @@ const HomePage = () => {
     },
     {
       title: "Publicly Verifiable & Private Collaborative ML Model Training",
-      description: "mplemented collaborative logistic-regression training in Noir with co-noir MPC, enabling multiple parties to train privately while publishing a publicly verifiable zero-knowledge proof.",
+      description: "Implemented collaborative logistic-regression training in Noir with co-noir MPC, enabling multiple parties to train privately while publishing a publicly verifiable zero-knowledge proof.",
       tags: ["Privacy-Preserving-ML", "MPC", "Noir"],
       link: "https://hashcloak.github.io/noir-mpc-ml-report/"
     },
     {
       title: "Fuel VM Cryptographic Opcode Integration",
-      description: "WebAuthn-based burner wallet offering seamless crypto onboarding through biometric authentication.",
+      description: "Implemented verifiers for Groth16, Plonk and FFlonk in Sway, leveraging the FuelVM's ZK opcodes",
       tags: ["R&D", "Cryptography", "Sway"],
       link: "https://github.com/hashcloak/sway-zkp-verifiers"
     },
