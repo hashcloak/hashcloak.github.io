@@ -14,25 +14,23 @@ const Footer = () => {
         
         {/* Row: Section titles side by side */}
         <div className="flex justify-between mb-4">
-          <h3 className="font-bold text-lg flex-1 text-center">Services</h3>
-          <h3 className="font-bold text-lg flex-1 text-center">Resources</h3>
-          <h3 className="font-bold text-lg flex-1 text-center">Contact</h3>
+          <h3 href="#services" className="font-bold text-lg flex-1 text-center">Services</h3>
+          <h3 href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="font-bold text-lg flex-1 text-center">Contact</h3>
         </div>
         
         {/* Columns: Section content underneath titles */}
         <div className="flex justify-between mb-8">
           {/* Services content column */}
           <div className="flex-1 text-center">
-            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Security Auditing</a></div>
-            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Bespoke R&D</a></div>
-            <div><a href="#" className="text-gray-400 hover:text-white">Concierge Advisory</a></div>
+            <div className="mb-2"><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="text-gray-400 hover:text-white">Security Auditing</a></div>
+            <div className="mb-2"><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="text-gray-400 hover:text-white">Bespoke R&D</a></div>
+            <div><a href="https://calendly.com/d/cmkh-vss-vmm/hashcloak-intro-call" className="text-gray-400 hover:text-white">Concierge Advisory</a></div>
           </div>
           
           {/* Resources content column */}
           <div className="flex-1 text-center">
-            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Blog</a></div>
-            <div className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Case Studies</a></div>
-            <div><a href="#" className="text-gray-400 hover:text-white">Research Papers</a></div>
+            <div className="mb-2"><a className="text-gray-400 hover:text-white">Blog</a></div>
+            <div><a className="text-gray-400 hover:text-white">Research Papers</a></div>
           </div>
           
           {/* Contact content column */}

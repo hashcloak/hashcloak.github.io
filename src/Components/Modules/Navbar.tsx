@@ -19,7 +19,7 @@ const Navbar = () => {
       </div>
       <nav className="p-4">
         <ul className="space-y-4">
-          <li><a href="#" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+          <li><a className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
           <li><a href="#services" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Services</a></li>
           <li><a href="#projects" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Work</a></li>
           <li><a href="#testimonials" className="block py-2 text-lg font-medium hover:text-indigo-600" onClick={() => setMobileMenuOpen(false)}>Testimonials</a></li>
@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              <li><a href="#" className="text-sm font-medium hover:text-indigo-600">Home</a></li>
+              <li><a className="text-sm font-medium hover:text-indigo-600">Home</a></li>
               <li><a href="#services" className="text-sm font-medium hover:text-indigo-600">Services</a></li>
               <li><a href="#projects" className="text-sm font-medium hover:text-indigo-600">Work</a></li>
               <li><a href="#testimonials" className="text-sm font-medium hover:text-indigo-600">Testimonials</a></li>
