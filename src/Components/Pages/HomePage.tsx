@@ -19,7 +19,7 @@ const HomePage = () => {
       company: "Fuel Labs"
     },
     {
-      quote: "HashCloak's audit of our Lelantus Spark protocol was thorough and insightful. Their recommendations significantly enhanced the security and privacy guarantees of our implementation.",
+      quote: "Hashcloak's audit and security services for our Lelantus Spark privacy protocol demonstrated not just technical expertise but genuine passion in pushing the privacy space.",
       author: "Reuben Yap",
       company: "Firo"
     }
